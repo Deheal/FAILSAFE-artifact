@@ -1,0 +1,7387 @@
+{
+ "params": {
+  "eps": 0.1,
+  "tau": 0.99,
+  "m": 2,
+  "per_probe_a1": true
+ },
+ "seed": 20261115,
+ "draws": 30,
+ "variants": {
+  "F 전체": {
+   "drop": [],
+   "no_control": false,
+   "no_confirm": false,
+   "whole_trial_a1": false
+  },
+  "C 대조 실행 제거": {
+   "drop": [],
+   "no_control": true,
+   "no_confirm": false,
+   "whole_trial_a1": false
+  },
+  "K 확인 단계 제거": {
+   "drop": [],
+   "no_control": false,
+   "no_confirm": true,
+   "whole_trial_a1": false
+  },
+  "A 시행 전체 A1": {
+   "drop": [],
+   "no_control": false,
+   "no_confirm": false,
+   "whole_trial_a1": true
+  },
+  "L-P_UV0": {
+   "drop": [
+    "P_UV0"
+   ],
+   "no_control": false,
+   "no_confirm": false,
+   "whole_trial_a1": false
+  },
+  "L-P_BEBS": {
+   "drop": [
+    "P_BEBS"
+   ],
+   "no_control": false,
+   "no_confirm": false,
+   "whole_trial_a1": false
+  },
+  "L-P_SC_DEC": {
+   "drop": [
+    "P_SC_DEC"
+   ],
+   "no_control": false,
+   "no_confirm": false,
+   "whole_trial_a1": false
+  },
+  "L-P_WRONG_CRED": {
+   "drop": [
+    "P_WRONG_CRED"
+   ],
+   "no_control": false,
+   "no_confirm": false,
+   "whole_trial_a1": false
+  },
+  "L-P_TAMPER_K": {
+   "drop": [
+    "P_TAMPER_K"
+   ],
+   "no_control": false,
+   "no_confirm": false,
+   "whole_trial_a1": false
+  },
+  "L-P_REVOKE": {
+   "drop": [
+    "P_REVOKE"
+   ],
+   "no_control": false,
+   "no_confirm": false,
+   "whole_trial_a1": false
+  },
+  "L-P_CORRUPT": {
+   "drop": [
+    "P_CORRUPT"
+   ],
+   "no_control": false,
+   "no_confirm": false,
+   "whole_trial_a1": false
+  },
+  "L-P_CORRUPT_CTR": {
+   "drop": [
+    "P_CORRUPT_CTR"
+   ],
+   "no_control": false,
+   "no_confirm": false,
+   "whole_trial_a1": false
+  },
+  "T 상태 불변 대조 제거": {
+   "drop": [
+    "P_TAMPER_K",
+    "P_REVOKE"
+   ],
+   "no_control": false,
+   "no_confirm": false,
+   "whole_trial_a1": false
+  },
+  "KT 확인+상태 불변 대조 제거": {
+   "drop": [
+    "P_TAMPER_K",
+    "P_REVOKE"
+   ],
+   "no_control": false,
+   "no_confirm": true,
+   "whole_trial_a1": false
+  },
+  "M-BB 무효 서명 대조 전부 제거(BE·BS)": {
+   "drop": [
+    "P_TAMPER_K",
+    "P_REVOKE",
+    "P_CORRUPT_CTR"
+   ],
+   "no_control": false,
+   "no_confirm": true,
+   "whole_trial_a1": false
+  },
+  "M-CTR 무효 서명 대조 전부 제거(카운터)": {
+   "drop": [
+    "P_TAMPER_K",
+    "P_REVOKE",
+    "P_CORRUPT"
+   ],
+   "no_control": false,
+   "no_confirm": true,
+   "whole_trial_a1": false
+  }
+ },
+ "totals": {
+  "0.0": {
+   "F 전체": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 150,
+    "und": 1,
+    "label_ok": 359,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "C 대조 실행 제거": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 150,
+    "und": 0,
+    "label_ok": 360,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "K 확인 단계 제거": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 150,
+    "und": 1,
+    "label_ok": 359,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "A 시행 전체 A1": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 90,
+    "und": 121,
+    "label_ok": 299,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 3,
+    "label_cond": 10,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "L-P_UV0": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 150,
+    "und": 1,
+    "label_ok": 359,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "L-P_BEBS": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 150,
+    "und": 1,
+    "label_ok": 359,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "L-P_SC_DEC": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 150,
+    "und": 1,
+    "label_ok": 299,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 10,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "L-P_WRONG_CRED": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 150,
+    "und": 1,
+    "label_ok": 359,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "L-P_TAMPER_K": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 150,
+    "und": 1,
+    "label_ok": 299,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 10,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "L-P_REVOKE": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 150,
+    "und": 1,
+    "label_ok": 359,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "L-P_CORRUPT": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 90,
+    "und": 420,
+    "label_ok": 0,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 3,
+    "label_cond": 0,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "L-P_CORRUPT_CTR": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 60,
+    "und": 450,
+    "label_ok": 0,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 2,
+    "label_cond": 0,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "T 상태 불변 대조 제거": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 120,
+    "und": 31,
+    "label_ok": 299,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 4,
+    "label_cond": 10,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "KT 확인+상태 불변 대조 제거": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 90,
+    "und": 61,
+    "label_ok": 299,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 3,
+    "label_cond": 10,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "M-BB 무효 서명 대조 전부 제거(BE·BS)": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 0,
+    "und": 510,
+    "label_ok": 0,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 0,
+    "label_cond": 0,
+    "n_neg": 360,
+    "confident_errors": 0
+   },
+   "M-CTR 무효 서명 대조 전부 제거(카운터)": {
+    "n_pos": 150,
+    "fp": 0,
+    "miss": 0,
+    "hit": 0,
+    "und": 510,
+    "label_ok": 0,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 0,
+    "label_cond": 0,
+    "n_neg": 360,
+    "confident_errors": 0
+   }
+  },
+  "0.01": {
+   "F 전체": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 4231,
+    "und": 1303,
+    "label_ok": 9344,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "C 대조 실행 제거": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 4384,
+    "und": 534,
+    "label_ok": 10058,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "K 확인 단계 제거": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 4212,
+    "und": 1374,
+    "label_ok": 9295,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "A 시행 전체 A1": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 2630,
+    "und": 4450,
+    "label_ok": 7808,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 3,
+    "label_cond": 10,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "L-P_UV0": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 4231,
+    "und": 1302,
+    "label_ok": 9349,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "L-P_BEBS": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 4183,
+    "und": 1350,
+    "label_ok": 9345,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "L-P_SC_DEC": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 4240,
+    "und": 1159,
+    "label_ok": 7975,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 10,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "L-P_WRONG_CRED": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 4231,
+    "und": 1302,
+    "label_ok": 9479,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "L-P_TAMPER_K": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 4125,
+    "und": 1407,
+    "label_ok": 7913,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 10,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "L-P_REVOKE": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 4113,
+    "und": 1419,
+    "label_ok": 9346,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "L-P_CORRUPT": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 2426,
+    "und": 12874,
+    "label_ok": 0,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 3,
+    "label_cond": 0,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "L-P_CORRUPT_CTR": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 1643,
+    "und": 13657,
+    "label_ok": 0,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 2,
+    "label_cond": 0,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "T 상태 불변 대조 제거": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 3373,
+    "und": 2158,
+    "label_ok": 7914,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 4,
+    "label_cond": 10,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "KT 확인+상태 불변 대조 제거": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 1,
+    "hit": 2554,
+    "und": 3029,
+    "label_ok": 7867,
+    "fp_cond": 0,
+    "miss_cond": 1,
+    "det_cond": 3,
+    "label_cond": 10,
+    "n_pos": 4500,
+    "confident_errors": 1
+   },
+   "M-BB 무효 서명 대조 전부 제거(BE·BS)": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 3,
+    "und": 15297,
+    "label_ok": 0,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 0,
+    "label_cond": 0,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "M-CTR 무효 서명 대조 전부 제거(카운터)": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 15,
+    "und": 15285,
+    "label_ok": 0,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 0,
+    "label_cond": 0,
+    "n_pos": 4500,
+    "confident_errors": 0
+   }
+  },
+  "0.05": {
+   "F 전체": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 2,
+    "hit": 3158,
+    "und": 5538,
+    "label_ok": 5416,
+    "fp_cond": 0,
+    "miss_cond": 2,
+    "det_cond": 5,
+    "label_cond": 11,
+    "n_pos": 4500,
+    "confident_errors": 2
+   },
+   "C 대조 실행 제거": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 2,
+    "hit": 3824,
+    "und": 2652,
+    "label_ok": 7518,
+    "fp_cond": 0,
+    "miss_cond": 2,
+    "det_cond": 5,
+    "label_cond": 12,
+    "n_pos": 4500,
+    "confident_errors": 2
+   },
+   "K 확인 단계 제거": {
+    "n_neg": 10800,
+    "fp": 2,
+    "miss": 4,
+    "hit": 3063,
+    "und": 5964,
+    "label_ok": 5157,
+    "fp_cond": 1,
+    "miss_cond": 3,
+    "det_cond": 5,
+    "label_cond": 7,
+    "n_pos": 4500,
+    "confident_errors": 6
+   },
+   "A 시행 전체 A1": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 1,
+    "hit": 1863,
+    "und": 8569,
+    "label_ok": 4035,
+    "fp_cond": 0,
+    "miss_cond": 1,
+    "det_cond": 3,
+    "label_cond": 3,
+    "n_pos": 4500,
+    "confident_errors": 1
+   },
+   "L-P_UV0": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 2,
+    "hit": 3155,
+    "und": 5541,
+    "label_ok": 5426,
+    "fp_cond": 0,
+    "miss_cond": 2,
+    "det_cond": 5,
+    "label_cond": 11,
+    "n_pos": 4500,
+    "confident_errors": 2
+   },
+   "L-P_BEBS": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 5,
+    "hit": 3087,
+    "und": 5606,
+    "label_ok": 5422,
+    "fp_cond": 0,
+    "miss_cond": 2,
+    "det_cond": 5,
+    "label_cond": 11,
+    "n_pos": 4500,
+    "confident_errors": 5
+   },
+   "L-P_SC_DEC": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 3265,
+    "und": 5094,
+    "label_ok": 5035,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 5,
+    "label_cond": 10,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "L-P_WRONG_CRED": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 2,
+    "hit": 3158,
+    "und": 5538,
+    "label_ok": 5722,
+    "fp_cond": 0,
+    "miss_cond": 2,
+    "det_cond": 5,
+    "label_cond": 10,
+    "n_pos": 4500,
+    "confident_errors": 2
+   },
+   "L-P_TAMPER_K": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 2,
+    "hit": 2950,
+    "und": 5745,
+    "label_ok": 4890,
+    "fp_cond": 0,
+    "miss_cond": 2,
+    "det_cond": 4,
+    "label_cond": 8,
+    "n_pos": 4500,
+    "confident_errors": 2
+   },
+   "L-P_REVOKE": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 6,
+    "hit": 2905,
+    "und": 5777,
+    "label_ok": 5424,
+    "fp_cond": 0,
+    "miss_cond": 2,
+    "det_cond": 4,
+    "label_cond": 11,
+    "n_pos": 4500,
+    "confident_errors": 6
+   },
+   "L-P_CORRUPT": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 1631,
+    "und": 13669,
+    "label_ok": 0,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 2,
+    "label_cond": 0,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "L-P_CORRUPT_CTR": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 1172,
+    "und": 14128,
+    "label_ok": 0,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 2,
+    "label_cond": 0,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "T 상태 불변 대조 제거": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 11,
+    "hit": 2381,
+    "und": 6295,
+    "label_ok": 4896,
+    "fp_cond": 0,
+    "miss_cond": 3,
+    "det_cond": 3,
+    "label_cond": 8,
+    "n_pos": 4500,
+    "confident_errors": 11
+   },
+   "KT 확인+상태 불변 대조 제거": {
+    "n_neg": 10800,
+    "fp": 2,
+    "miss": 31,
+    "hit": 1772,
+    "und": 7215,
+    "label_ok": 4651,
+    "fp_cond": 1,
+    "miss_cond": 3,
+    "det_cond": 3,
+    "label_cond": 8,
+    "n_pos": 4500,
+    "confident_errors": 33
+   },
+   "M-BB 무효 서명 대조 전부 제거(BE·BS)": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 13,
+    "und": 15287,
+    "label_ok": 0,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 0,
+    "label_cond": 0,
+    "n_pos": 4500,
+    "confident_errors": 0
+   },
+   "M-CTR 무효 서명 대조 전부 제거(카운터)": {
+    "n_neg": 10800,
+    "fp": 0,
+    "miss": 0,
+    "hit": 32,
+    "und": 15268,
+    "label_ok": 0,
+    "fp_cond": 0,
+    "miss_cond": 0,
+    "det_cond": 0,
+    "label_cond": 0,
+    "n_pos": 4500,
+    "confident_errors": 0
+   }
+  }
+ },
+ "per_condition": {
+  "0.0": {
+   "F 전체": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 29,
+      "undetermined": 1
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    }
+   },
+   "C 대조 실행 제거": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    }
+   },
+   "K 확인 단계 제거": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 29,
+      "undetermined": 1
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    }
+   },
+   "A 시행 전체 A1": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 29,
+      "undetermined": 1
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_UV0": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 29,
+      "undetermined": 1
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_BEBS": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 29,
+      "undetermined": 1
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_SC_DEC": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 29,
+      "undetermined": 1
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_WRONG_CRED": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 29,
+      "undetermined": 1
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_TAMPER_K": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 29,
+      "undetermined": 1
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_REVOKE": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 29,
+      "undetermined": 1
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_CORRUPT": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    }
+   },
+   "L-P_CORRUPT_CTR": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    }
+   },
+   "T 상태 불변 대조 제거": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 29,
+      "undetermined": 1
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    }
+   },
+   "KT 확인+상태 불변 대조 제거": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 30
+     },
+     "majority": "normal_policy"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 29,
+      "undetermined": 1
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 30
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 30
+     },
+     "majority": "no_block"
+    }
+   },
+   "M-BB 무효 서명 대조 전부 제거(BE·BS)": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    }
+   },
+   "M-CTR 무효 서명 대조 전부 제거(카운터)": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 30
+     },
+     "majority": "undetermined"
+    }
+   }
+  },
+  "0.01": {
+   "F 전체": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 751,
+      "undetermined": 85,
+      "no_block": 64
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 847,
+      "undetermined": 53
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 837,
+      "undetermined": 63
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 762,
+      "no_block": 44,
+      "undetermined": 94
+     },
+     "majority": "normal_policy"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 792,
+      "no_block": 24,
+      "undetermined": 84
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 738,
+      "undetermined": 128,
+      "normal_policy": 34
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 849,
+      "undetermined": 51
+     },
+     "majority": "state_corruption"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 767,
+      "normal_policy": 40,
+      "undetermined": 93
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 799,
+      "undetermined": 67,
+      "normal_policy": 34
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 769,
+      "undetermined": 95,
+      "normal_policy": 36
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 801,
+      "undetermined": 77,
+      "no_block": 22
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 850,
+      "undetermined": 50
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 819,
+      "normal_policy": 28,
+      "undetermined": 53
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 120,
+      "no_block": 748,
+      "normal_policy": 32
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 848,
+      "undetermined": 52
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 816,
+      "normal_policy": 35,
+      "undetermined": 49
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 89,
+      "no_block": 782,
+      "normal_policy": 29
+     },
+     "majority": "no_block"
+    }
+   },
+   "C 대조 실행 제거": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 839,
+      "no_block": 21,
+      "undetermined": 40
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 869,
+      "undetermined": 31
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 868,
+      "undetermined": 32
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 838,
+      "undetermined": 52,
+      "no_block": 10
+     },
+     "majority": "normal_policy"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 863,
+      "undetermined": 37
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 808,
+      "undetermined": 53,
+      "normal_policy": 39
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 891,
+      "undetermined": 9
+     },
+     "majority": "state_corruption"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 816,
+      "normal_policy": 40,
+      "undetermined": 44
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 849,
+      "normal_policy": 36,
+      "undetermined": 15
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 812,
+      "undetermined": 49,
+      "normal_policy": 39
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 871,
+      "undetermined": 29
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 876,
+      "undetermined": 24
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 869,
+      "normal_policy": 31
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 800,
+      "normal_policy": 38,
+      "undetermined": 62
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 880,
+      "undetermined": 20
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 861,
+      "normal_policy": 37,
+      "undetermined": 2
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 35,
+      "no_block": 832,
+      "normal_policy": 33
+     },
+     "majority": "no_block"
+    }
+   },
+   "K 확인 단계 제거": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 751,
+      "undetermined": 86,
+      "no_block": 63
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 845,
+      "undetermined": 55
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 837,
+      "undetermined": 63
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 762,
+      "no_block": 43,
+      "undetermined": 95
+     },
+     "majority": "normal_policy"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 791,
+      "no_block": 24,
+      "undetermined": 85
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 738,
+      "undetermined": 128,
+      "normal_policy": 34
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 840,
+      "undetermined": 60
+     },
+     "majority": "state_corruption"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 765,
+      "normal_policy": 40,
+      "undetermined": 95
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 797,
+      "undetermined": 69,
+      "normal_policy": 34
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 769,
+      "undetermined": 95,
+      "normal_policy": 36
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 799,
+      "undetermined": 79,
+      "no_block": 22
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 850,
+      "undetermined": 50
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 801,
+      "normal_policy": 27,
+      "undetermined": 72
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 120,
+      "no_block": 748,
+      "normal_policy": 32
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 840,
+      "undetermined": 60
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 792,
+      "normal_policy": 35,
+      "undetermined": 73
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 89,
+      "no_block": 782,
+      "normal_policy": 29
+     },
+     "majority": "no_block"
+    }
+   },
+   "A 시행 전체 A1": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 825,
+      "no_block": 63,
+      "normal_policy": 12
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 841,
+      "state_corruption": 59
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 860,
+      "state_corruption": 40
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 853,
+      "no_block": 44,
+      "normal_policy": 3
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 791,
+      "no_block": 24,
+      "undetermined": 85
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 738,
+      "undetermined": 130,
+      "normal_policy": 32
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 841,
+      "undetermined": 59
+     },
+     "majority": "state_corruption"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 766,
+      "normal_policy": 38,
+      "undetermined": 96
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 797,
+      "undetermined": 70,
+      "normal_policy": 33
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 768,
+      "undetermined": 98,
+      "normal_policy": 34
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 775,
+      "undetermined": 103,
+      "no_block": 22
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 846,
+      "undetermined": 54
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 819,
+      "normal_policy": 28,
+      "undetermined": 53
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 122,
+      "no_block": 748,
+      "normal_policy": 30
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 844,
+      "undetermined": 56
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 813,
+      "normal_policy": 35,
+      "undetermined": 52
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 93,
+      "no_block": 778,
+      "normal_policy": 29
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_UV0": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 751,
+      "undetermined": 85,
+      "no_block": 64
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 847,
+      "undetermined": 53
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 837,
+      "undetermined": 63
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 762,
+      "no_block": 44,
+      "undetermined": 94
+     },
+     "majority": "normal_policy"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 792,
+      "no_block": 24,
+      "undetermined": 84
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 739,
+      "undetermined": 128,
+      "normal_policy": 33
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 849,
+      "undetermined": 51
+     },
+     "majority": "state_corruption"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 767,
+      "normal_policy": 40,
+      "undetermined": 93
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 799,
+      "undetermined": 67,
+      "normal_policy": 34
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 770,
+      "undetermined": 95,
+      "normal_policy": 35
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 801,
+      "undetermined": 77,
+      "no_block": 22
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 850,
+      "undetermined": 50
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 820,
+      "normal_policy": 27,
+      "undetermined": 53
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 120,
+      "no_block": 748,
+      "normal_policy": 32
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 848,
+      "undetermined": 52
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 817,
+      "normal_policy": 35,
+      "undetermined": 48
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 89,
+      "no_block": 783,
+      "normal_policy": 28
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_BEBS": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 751,
+      "undetermined": 85,
+      "no_block": 64
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 846,
+      "undetermined": 54
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 790,
+      "undetermined": 110
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 762,
+      "no_block": 44,
+      "undetermined": 94
+     },
+     "majority": "normal_policy"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 792,
+      "no_block": 24,
+      "undetermined": 84
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 738,
+      "undetermined": 128,
+      "normal_policy": 34
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 849,
+      "undetermined": 51
+     },
+     "majority": "state_corruption"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 767,
+      "normal_policy": 40,
+      "undetermined": 93
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 799,
+      "undetermined": 67,
+      "normal_policy": 34
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 769,
+      "undetermined": 95,
+      "normal_policy": 36
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 801,
+      "undetermined": 77,
+      "no_block": 22
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 850,
+      "undetermined": 50
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 819,
+      "normal_policy": 28,
+      "undetermined": 53
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 120,
+      "no_block": 748,
+      "normal_policy": 32
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 848,
+      "undetermined": 52
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 817,
+      "normal_policy": 35,
+      "undetermined": 48
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 89,
+      "no_block": 782,
+      "normal_policy": 29
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_SC_DEC": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 805,
+      "undetermined": 68,
+      "normal_policy": 27
+     },
+     "majority": "no_block"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 847,
+      "undetermined": 53
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 846,
+      "undetermined": 54
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 802,
+      "normal_policy": 24,
+      "undetermined": 74
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 792,
+      "no_block": 24,
+      "undetermined": 84
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 759,
+      "normal_policy": 34,
+      "undetermined": 107
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 849,
+      "undetermined": 51
+     },
+     "majority": "state_corruption"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 787,
+      "normal_policy": 40,
+      "undetermined": 73
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 799,
+      "undetermined": 67,
+      "normal_policy": 34
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 792,
+      "undetermined": 70,
+      "normal_policy": 38
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 801,
+      "undetermined": 77,
+      "no_block": 22
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 850,
+      "undetermined": 50
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 819,
+      "normal_policy": 28,
+      "undetermined": 53
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 90,
+      "no_block": 776,
+      "normal_policy": 34
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 848,
+      "undetermined": 52
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 817,
+      "normal_policy": 35,
+      "undetermined": 48
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 88,
+      "no_block": 782,
+      "normal_policy": 30
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_WRONG_CRED": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 750,
+      "undetermined": 85,
+      "no_block": 65
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 847,
+      "undetermined": 53
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 837,
+      "undetermined": 63
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 762,
+      "no_block": 44,
+      "undetermined": 94
+     },
+     "majority": "normal_policy"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 791,
+      "no_block": 25,
+      "undetermined": 84
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 752,
+      "undetermined": 128,
+      "normal_policy": 20
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 849,
+      "undetermined": 51
+     },
+     "majority": "state_corruption"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 789,
+      "normal_policy": 18,
+      "undetermined": 93
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 813,
+      "undetermined": 67,
+      "normal_policy": 20
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 789,
+      "undetermined": 95,
+      "normal_policy": 16
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 800,
+      "undetermined": 77,
+      "no_block": 23
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 850,
+      "undetermined": 50
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 835,
+      "normal_policy": 12,
+      "undetermined": 53
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 120,
+      "no_block": 765,
+      "normal_policy": 15
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 848,
+      "undetermined": 52
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 837,
+      "normal_policy": 15,
+      "undetermined": 48
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 89,
+      "no_block": 796,
+      "normal_policy": 15
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_TAMPER_K": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 750,
+      "undetermined": 85,
+      "no_block": 65
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 831,
+      "undetermined": 69
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 749,
+      "undetermined": 151
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 762,
+      "no_block": 44,
+      "undetermined": 94
+     },
+     "majority": "normal_policy"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 796,
+      "undetermined": 84,
+      "normal_policy": 20
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 757,
+      "undetermined": 128,
+      "normal_policy": 15
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 848,
+      "undetermined": 52
+     },
+     "majority": "state_corruption"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 785,
+      "undetermined": 93,
+      "normal_policy": 22
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 819,
+      "undetermined": 67,
+      "normal_policy": 14
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 784,
+      "undetermined": 95,
+      "normal_policy": 21
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 807,
+      "normal_policy": 17,
+      "undetermined": 76
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 850,
+      "undetermined": 50
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 830,
+      "undetermined": 53,
+      "normal_policy": 17
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 120,
+      "no_block": 762,
+      "normal_policy": 18
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 847,
+      "undetermined": 53
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 832,
+      "normal_policy": 20,
+      "undetermined": 48
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 89,
+      "no_block": 795,
+      "normal_policy": 16
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_REVOKE": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 751,
+      "undetermined": 85,
+      "no_block": 64
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 830,
+      "undetermined": 70
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 736,
+      "undetermined": 164
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 762,
+      "no_block": 44,
+      "undetermined": 94
+     },
+     "majority": "normal_policy"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 792,
+      "no_block": 24,
+      "undetermined": 84
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 738,
+      "undetermined": 128,
+      "normal_policy": 34
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 849,
+      "undetermined": 51
+     },
+     "majority": "state_corruption"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 767,
+      "normal_policy": 40,
+      "undetermined": 93
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 799,
+      "undetermined": 67,
+      "normal_policy": 34
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 769,
+      "undetermined": 95,
+      "normal_policy": 36
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 801,
+      "undetermined": 77,
+      "no_block": 22
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 850,
+      "undetermined": 50
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 819,
+      "normal_policy": 28,
+      "undetermined": 53
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 120,
+      "no_block": 748,
+      "normal_policy": 32
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 848,
+      "undetermined": 52
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 817,
+      "normal_policy": 35,
+      "undetermined": 48
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 88,
+      "no_block": 783,
+      "normal_policy": 29
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_CORRUPT": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 729,
+      "undetermined": 171
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 849,
+      "undetermined": 51
+     },
+     "majority": "state_corruption"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 848,
+      "undetermined": 52
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    }
+   },
+   "L-P_CORRUPT_CTR": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 107,
+      "state_corruption": 793
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 850,
+      "undetermined": 50
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    }
+   },
+   "T 상태 불변 대조 제거": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 750,
+      "undetermined": 85,
+      "no_block": 65
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 131,
+      "state_corruption": 769
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 837,
+      "state_corruption": 63
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 762,
+      "no_block": 44,
+      "undetermined": 94
+     },
+     "majority": "normal_policy"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 796,
+      "undetermined": 84,
+      "normal_policy": 20
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 757,
+      "undetermined": 128,
+      "normal_policy": 15
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 847,
+      "undetermined": 53
+     },
+     "majority": "state_corruption"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 785,
+      "undetermined": 93,
+      "normal_policy": 22
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 819,
+      "undetermined": 67,
+      "normal_policy": 14
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 784,
+      "undetermined": 95,
+      "normal_policy": 21
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 807,
+      "normal_policy": 17,
+      "undetermined": 76
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 848,
+      "undetermined": 52
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 830,
+      "undetermined": 53,
+      "normal_policy": 17
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 120,
+      "no_block": 762,
+      "normal_policy": 18
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 846,
+      "undetermined": 54
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 832,
+      "normal_policy": 20,
+      "undetermined": 48
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 88,
+      "no_block": 796,
+      "normal_policy": 16
+     },
+     "majority": "no_block"
+    }
+   },
+   "KT 확인+상태 불변 대조 제거": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 750,
+      "undetermined": 86,
+      "no_block": 64
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 837,
+      "state_corruption": 62,
+      "normal_policy": 1
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 843,
+      "state_corruption": 57
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 762,
+      "no_block": 43,
+      "undetermined": 95
+     },
+     "majority": "normal_policy"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 795,
+      "undetermined": 85,
+      "normal_policy": 20
+     },
+     "majority": "no_block"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 757,
+      "undetermined": 128,
+      "normal_policy": 15
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 811,
+      "undetermined": 89
+     },
+     "majority": "state_corruption"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 783,
+      "undetermined": 95,
+      "normal_policy": 22
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 817,
+      "undetermined": 69,
+      "normal_policy": 14
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 784,
+      "undetermined": 95,
+      "normal_policy": 21
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 805,
+      "normal_policy": 17,
+      "undetermined": 78
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 822,
+      "undetermined": 78
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 812,
+      "undetermined": 72,
+      "normal_policy": 16
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 120,
+      "no_block": 762,
+      "normal_policy": 18
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 802,
+      "undetermined": 98
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 807,
+      "normal_policy": 20,
+      "undetermined": 73
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 88,
+      "no_block": 796,
+      "normal_policy": 16
+     },
+     "majority": "no_block"
+    }
+   },
+   "M-BB 무효 서명 대조 전부 제거(BE·BS)": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 897,
+      "state_corruption": 3
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    }
+   },
+   "M-CTR 무효 서명 대조 전부 제거(카운터)": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 891,
+      "state_corruption": 9
+     },
+     "majority": "undetermined"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 894,
+      "state_corruption": 6
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    }
+   }
+  },
+  "0.05": {
+   "F 전체": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 374,
+      "undetermined": 389,
+      "no_block": 137
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 640,
+      "undetermined": 260
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 552,
+      "undetermined": 347,
+      "normal_policy": 1
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 385,
+      "normal_policy": 387,
+      "no_block": 128
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 649,
+      "undetermined": 251
+     },
+     "majority": "state_corruption"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "normal_policy": 76,
+      "undetermined": 409,
+      "no_block": 415
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 401,
+      "no_block": 409,
+      "normal_policy": 90
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 440,
+      "undetermined": 375,
+      "normal_policy": 85
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 486,
+      "undetermined": 309,
+      "normal_policy": 105
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 457,
+      "undetermined": 357,
+      "no_block": 86
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 657,
+      "undetermined": 243
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 490,
+      "no_block": 67,
+      "undetermined": 343
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 247,
+      "no_block": 548,
+      "normal_policy": 105
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 395,
+      "no_block": 410,
+      "normal_policy": 95
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 660,
+      "undetermined": 239,
+      "no_block": 1
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 543,
+      "undetermined": 239,
+      "normal_policy": 118
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 349,
+      "no_block": 457,
+      "normal_policy": 94
+     },
+     "majority": "no_block"
+    }
+   },
+   "C 대조 실행 제거": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 633,
+      "no_block": 47,
+      "undetermined": 220
+     },
+     "majority": "normal_policy"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 766,
+      "undetermined": 134
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 714,
+      "undetermined": 185,
+      "normal_policy": 1
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 229,
+      "normal_policy": 618,
+      "no_block": 53
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 783,
+      "undetermined": 117
+     },
+     "majority": "state_corruption"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "normal_policy": 126,
+      "undetermined": 243,
+      "no_block": 531
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 229,
+      "no_block": 523,
+      "normal_policy": 148
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 542,
+      "undetermined": 226,
+      "normal_policy": 132
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 626,
+      "undetermined": 123,
+      "normal_policy": 151
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 741,
+      "undetermined": 154,
+      "no_block": 5
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 769,
+      "undetermined": 131
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 764,
+      "undetermined": 133,
+      "no_block": 3
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 706,
+      "normal_policy": 177,
+      "undetermined": 17
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 508,
+      "normal_policy": 146,
+      "undetermined": 246
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 792,
+      "undetermined": 107,
+      "no_block": 1
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 712,
+      "normal_policy": 171,
+      "undetermined": 17
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 141,
+      "no_block": 614,
+      "normal_policy": 145
+     },
+     "majority": "no_block"
+    }
+   },
+   "K 확인 단계 제거": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 370,
+      "undetermined": 404,
+      "no_block": 126
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 300,
+      "state_corruption": 598,
+      "normal_policy": 2
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 566,
+      "undetermined": 333,
+      "normal_policy": 1
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 404,
+      "normal_policy": 384,
+      "no_block": 112
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 619,
+      "undetermined": 281
+     },
+     "majority": "state_corruption"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "normal_policy": 74,
+      "undetermined": 424,
+      "no_block": 402
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 421,
+      "no_block": 389,
+      "normal_policy": 90
+     },
+     "majority": "undetermined"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 415,
+      "undetermined": 404,
+      "normal_policy": 81
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 474,
+      "undetermined": 323,
+      "normal_policy": 103
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 447,
+      "undetermined": 370,
+      "no_block": 83
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 652,
+      "undetermined": 248
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 360,
+      "normal_policy": 472,
+      "no_block": 66,
+      "state_corruption": 2
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 321,
+      "no_block": 488,
+      "normal_policy": 91
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 410,
+      "no_block": 397,
+      "normal_policy": 93
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 628,
+      "undetermined": 271,
+      "no_block": 1
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 474,
+      "undetermined": 326,
+      "normal_policy": 100
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 364,
+      "no_block": 445,
+      "normal_policy": 91
+     },
+     "majority": "no_block"
+    }
+   },
+   "A 시행 전체 A1": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 762,
+      "no_block": 114,
+      "normal_policy": 24
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 746,
+      "state_corruption": 154
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 801,
+      "state_corruption": 99
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 779,
+      "normal_policy": 22,
+      "no_block": 99
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 377,
+      "state_corruption": 523
+     },
+     "majority": "state_corruption"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "normal_policy": 45,
+      "undetermined": 483,
+      "no_block": 372
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 462,
+      "no_block": 370,
+      "normal_policy": 68
+     },
+     "majority": "undetermined"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 401,
+      "undetermined": 441,
+      "normal_policy": 58
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 439,
+      "undetermined": 393,
+      "normal_policy": 68
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 445,
+      "normal_policy": 381,
+      "no_block": 74
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 554,
+      "undetermined": 346
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 522,
+      "normal_policy": 316,
+      "no_block": 62
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 368,
+      "no_block": 468,
+      "normal_policy": 64
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 464,
+      "no_block": 375,
+      "normal_policy": 61
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 533,
+      "undetermined": 366,
+      "no_block": 1
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 467,
+      "undetermined": 365,
+      "normal_policy": 68
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 449,
+      "no_block": 400,
+      "normal_policy": 51
+     },
+     "majority": "undetermined"
+    }
+   },
+   "L-P_UV0": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 374,
+      "undetermined": 389,
+      "no_block": 137
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 639,
+      "undetermined": 261
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 550,
+      "undetermined": 349,
+      "normal_policy": 1
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 385,
+      "normal_policy": 387,
+      "no_block": 128
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 649,
+      "undetermined": 251
+     },
+     "majority": "state_corruption"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "normal_policy": 73,
+      "undetermined": 409,
+      "no_block": 418
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 401,
+      "no_block": 409,
+      "normal_policy": 90
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 440,
+      "undetermined": 375,
+      "normal_policy": 85
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 487,
+      "undetermined": 309,
+      "normal_policy": 104
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 457,
+      "undetermined": 357,
+      "no_block": 86
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 657,
+      "undetermined": 243
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 490,
+      "no_block": 67,
+      "undetermined": 343
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 247,
+      "no_block": 550,
+      "normal_policy": 103
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 395,
+      "no_block": 411,
+      "normal_policy": 94
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 660,
+      "undetermined": 239,
+      "no_block": 1
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 544,
+      "undetermined": 239,
+      "normal_policy": 117
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 349,
+      "no_block": 459,
+      "normal_policy": 92
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_BEBS": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 374,
+      "undetermined": 389,
+      "no_block": 137
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 623,
+      "undetermined": 277
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 506,
+      "undetermined": 390,
+      "normal_policy": 4
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 385,
+      "normal_policy": 387,
+      "no_block": 128
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 647,
+      "undetermined": 253
+     },
+     "majority": "state_corruption"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "normal_policy": 76,
+      "undetermined": 409,
+      "no_block": 415
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 401,
+      "no_block": 409,
+      "normal_policy": 90
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 440,
+      "undetermined": 375,
+      "normal_policy": 85
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 488,
+      "undetermined": 309,
+      "normal_policy": 103
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 457,
+      "undetermined": 357,
+      "no_block": 86
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 654,
+      "undetermined": 246
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 490,
+      "no_block": 67,
+      "undetermined": 343
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 247,
+      "no_block": 550,
+      "normal_policy": 103
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 395,
+      "no_block": 410,
+      "normal_policy": 95
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 657,
+      "undetermined": 242,
+      "no_block": 1
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 544,
+      "undetermined": 239,
+      "normal_policy": 117
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 349,
+      "no_block": 458,
+      "normal_policy": 93
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_SC_DEC": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 90,
+      "undetermined": 338,
+      "no_block": 472
+     },
+     "majority": "no_block"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 664,
+      "undetermined": 236
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 644,
+      "undetermined": 256
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 477,
+      "normal_policy": 89,
+      "undetermined": 334
+     },
+     "majority": "no_block"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 647,
+      "undetermined": 253
+     },
+     "majority": "state_corruption"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "normal_policy": 84,
+      "no_block": 464,
+      "undetermined": 352
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 461,
+      "undetermined": 337,
+      "normal_policy": 102
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 481,
+      "undetermined": 328,
+      "normal_policy": 91
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 489,
+      "undetermined": 305,
+      "normal_policy": 106
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 457,
+      "undetermined": 357,
+      "no_block": 86
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 651,
+      "undetermined": 249
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 492,
+      "no_block": 68,
+      "undetermined": 340
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 247,
+      "no_block": 549,
+      "normal_policy": 104
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 336,
+      "no_block": 461,
+      "normal_policy": 103
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 659,
+      "undetermined": 241
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 543,
+      "undetermined": 239,
+      "normal_policy": 118
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 346,
+      "no_block": 459,
+      "normal_policy": 95
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_WRONG_CRED": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 355,
+      "undetermined": 389,
+      "no_block": 156
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 640,
+      "undetermined": 260
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 552,
+      "undetermined": 347,
+      "normal_policy": 1
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 385,
+      "normal_policy": 369,
+      "no_block": 146
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 649,
+      "undetermined": 251
+     },
+     "majority": "state_corruption"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "normal_policy": 42,
+      "undetermined": 409,
+      "no_block": 449
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 401,
+      "no_block": 451,
+      "normal_policy": 48
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 486,
+      "undetermined": 375,
+      "normal_policy": 39
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 527,
+      "undetermined": 309,
+      "normal_policy": 64
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 446,
+      "undetermined": 357,
+      "no_block": 97
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 657,
+      "undetermined": 243
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 485,
+      "no_block": 72,
+      "undetermined": 343
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 247,
+      "no_block": 596,
+      "normal_policy": 57
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 395,
+      "no_block": 448,
+      "normal_policy": 57
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 660,
+      "undetermined": 239,
+      "no_block": 1
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 602,
+      "undetermined": 239,
+      "normal_policy": 59
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 349,
+      "no_block": 508,
+      "normal_policy": 43
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_TAMPER_K": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 361,
+      "undetermined": 389,
+      "no_block": 150
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 572,
+      "undetermined": 328
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 441,
+      "undetermined": 458,
+      "normal_policy": 1
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 385,
+      "normal_policy": 377,
+      "no_block": 138
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 640,
+      "undetermined": 260
+     },
+     "majority": "state_corruption"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 446,
+      "undetermined": 409,
+      "normal_policy": 45
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 401,
+      "no_block": 450,
+      "normal_policy": 49
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 474,
+      "undetermined": 375,
+      "normal_policy": 51
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 541,
+      "undetermined": 309,
+      "normal_policy": 50
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 487,
+      "undetermined": 357,
+      "normal_policy": 56
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 643,
+      "undetermined": 257
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 48,
+      "no_block": 510,
+      "undetermined": 342
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 247,
+      "no_block": 594,
+      "normal_policy": 59
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 395,
+      "no_block": 457,
+      "normal_policy": 48
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 654,
+      "undetermined": 245,
+      "no_block": 1
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 595,
+      "undetermined": 239,
+      "normal_policy": 66
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 349,
+      "no_block": 491,
+      "normal_policy": 60
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_REVOKE": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 374,
+      "undetermined": 389,
+      "no_block": 137
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 328,
+      "state_corruption": 572
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 393,
+      "undetermined": 502,
+      "normal_policy": 5
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 383,
+      "normal_policy": 387,
+      "no_block": 130
+     },
+     "majority": "normal_policy"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 643,
+      "undetermined": 257
+     },
+     "majority": "state_corruption"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "normal_policy": 76,
+      "undetermined": 408,
+      "no_block": 416
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 400,
+      "no_block": 410,
+      "normal_policy": 90
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 441,
+      "undetermined": 374,
+      "normal_policy": 85
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 486,
+      "undetermined": 309,
+      "normal_policy": 105
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 458,
+      "undetermined": 356,
+      "no_block": 86
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 647,
+      "undetermined": 253
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 491,
+      "no_block": 67,
+      "undetermined": 342
+     },
+     "majority": "normal_policy"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 247,
+      "no_block": 548,
+      "normal_policy": 105
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 395,
+      "no_block": 410,
+      "normal_policy": 95
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 650,
+      "undetermined": 249,
+      "no_block": 1
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 543,
+      "undetermined": 239,
+      "normal_policy": 118
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 346,
+      "no_block": 460,
+      "normal_policy": 94
+     },
+     "majority": "no_block"
+    }
+   },
+   "L-P_CORRUPT": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 347,
+      "undetermined": 553
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 634,
+      "undetermined": 266
+     },
+     "majority": "state_corruption"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 650,
+      "undetermined": 250
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    }
+   },
+   "L-P_CORRUPT_CTR": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 382,
+      "state_corruption": 518
+     },
+     "majority": "state_corruption"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 654,
+      "undetermined": 246
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    }
+   },
+   "T 상태 불변 대조 제거": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 361,
+      "undetermined": 389,
+      "no_block": 150
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 477,
+      "state_corruption": 421,
+      "normal_policy": 2
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 753,
+      "state_corruption": 139,
+      "normal_policy": 8
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 383,
+      "normal_policy": 377,
+      "no_block": 140
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 607,
+      "undetermined": 293
+     },
+     "majority": "state_corruption"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 447,
+      "undetermined": 408,
+      "normal_policy": 45
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 400,
+      "no_block": 451,
+      "normal_policy": 49
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 475,
+      "undetermined": 374,
+      "normal_policy": 51
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 541,
+      "undetermined": 309,
+      "normal_policy": 50
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 488,
+      "undetermined": 356,
+      "normal_policy": 56
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 602,
+      "undetermined": 298
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 48,
+      "no_block": 511,
+      "undetermined": 341
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 247,
+      "no_block": 594,
+      "normal_policy": 59
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 395,
+      "no_block": 457,
+      "normal_policy": 48
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 612,
+      "undetermined": 287,
+      "no_block": 1
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 595,
+      "undetermined": 239,
+      "normal_policy": 66
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 346,
+      "no_block": 494,
+      "normal_policy": 60
+     },
+     "majority": "no_block"
+    }
+   },
+   "KT 확인+상태 불변 대조 제거": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "normal_policy": 362,
+      "undetermined": 402,
+      "no_block": 136
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "normal_policy": 22,
+      "undetermined": 719,
+      "state_corruption": 159
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 763,
+      "state_corruption": 129,
+      "normal_policy": 8
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 401,
+      "normal_policy": 377,
+      "no_block": 122
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 413,
+      "state_corruption": 487
+     },
+     "majority": "state_corruption"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 431,
+      "undetermined": 424,
+      "normal_policy": 45
+     },
+     "majority": "no_block"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 420,
+      "no_block": 431,
+      "normal_policy": 49
+     },
+     "majority": "no_block"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 447,
+      "undetermined": 403,
+      "normal_policy": 50
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 528,
+      "undetermined": 323,
+      "normal_policy": 49
+     },
+     "majority": "no_block"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "no_block": 477,
+      "undetermined": 369,
+      "normal_policy": 54
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 516,
+      "undetermined": 384
+     },
+     "majority": "state_corruption"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 358,
+      "no_block": 495,
+      "normal_policy": 45,
+      "state_corruption": 2
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 321,
+      "no_block": 530,
+      "normal_policy": 49
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 410,
+      "no_block": 443,
+      "normal_policy": 47
+     },
+     "majority": "no_block"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "state_corruption": 481,
+      "undetermined": 418,
+      "no_block": 1
+     },
+     "majority": "state_corruption"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "no_block": 521,
+      "undetermined": 326,
+      "normal_policy": 53
+     },
+     "majority": "no_block"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 361,
+      "no_block": 482,
+      "normal_policy": 57
+     },
+     "majority": "no_block"
+    }
+   },
+   "M-BB 무효 서명 대조 전부 제거(BE·BS)": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 887,
+      "state_corruption": 13
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    }
+   },
+   "M-CTR 무효 서명 대조 전부 제거(카운터)": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 883,
+      "state_corruption": 17
+     },
+     "majority": "undetermined"
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "dist": {
+      "undetermined": 885,
+      "state_corruption": 15
+     },
+     "majority": "undetermined"
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "dist": {
+      "undetermined": 900
+     },
+     "majority": "undetermined"
+    }
+   }
+  }
+ },
+ "check_vs_round5a": {
+  "0.0": true,
+  "0.01": true,
+  "0.05": true
+ },
+ "elapsed_sec": 2029
+}

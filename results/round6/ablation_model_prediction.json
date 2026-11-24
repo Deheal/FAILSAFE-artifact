@@ -1,0 +1,482 @@
+{
+ "전체": {
+  "기기 종속": {
+   "corruption_hyps": 80,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 112
+  },
+  "동기화 전": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 40
+  },
+  "동기화 완료": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 40
+  },
+  "백업 해제": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 40
+  }
+ },
+ "확인 단계 제거": {
+  "기기 종속": {
+   "corruption_hyps": 80,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 112
+  },
+  "동기화 전": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 40
+  },
+  "동기화 완료": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 40
+  },
+  "백업 해제": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 40
+  }
+ },
+ "P_UV0 제거": {
+  "기기 종속": {
+   "corruption_hyps": 80,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 56
+  },
+  "동기화 전": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 20
+  },
+  "동기화 완료": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 20
+  },
+  "백업 해제": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 20
+  }
+ },
+ "P_BEBS 제거": {
+  "기기 종속": {
+   "corruption_hyps": 80,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 56
+  },
+  "동기화 전": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 32
+  },
+  "동기화 완료": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 32
+  },
+  "백업 해제": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 32
+  }
+ },
+ "P_SC_DEC 제거": {
+  "기기 종속": {
+   "corruption_hyps": 80,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 72
+  },
+  "동기화 전": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 24
+  },
+  "동기화 완료": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 24
+  },
+  "백업 해제": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 24
+  }
+ },
+ "P_WRONG_CRED 제거": {
+  "기기 종속": {
+   "corruption_hyps": 80,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 56
+  },
+  "동기화 전": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 20
+  },
+  "동기화 완료": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 20
+  },
+  "백업 해제": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 20
+  }
+ },
+ "P_TAMPER_K 제거": {
+  "기기 종속": {
+   "corruption_hyps": 80,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 64
+  },
+  "동기화 전": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 28
+  },
+  "동기화 완료": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 28
+  },
+  "백업 해제": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 28
+  }
+ },
+ "P_REVOKE 제거": {
+  "기기 종속": {
+   "corruption_hyps": 80,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 112
+  },
+  "동기화 전": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 40
+  },
+  "동기화 완료": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 40
+  },
+  "백업 해제": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 40
+  }
+ },
+ "P_CORRUPT 제거": {
+  "기기 종속": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 48,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 64
+  },
+  "동기화 전": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 40
+  },
+  "동기화 완료": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 40
+  },
+  "백업 해제": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 40
+  }
+ },
+ "P_CORRUPT_CTR 제거": {
+  "기기 종속": {
+   "corruption_hyps": 64,
+   "lost_vs_full": 16,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 80
+  },
+  "동기화 전": {
+   "corruption_hyps": 0,
+   "lost_vs_full": 32,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 32
+  },
+  "동기화 완료": {
+   "corruption_hyps": 0,
+   "lost_vs_full": 32,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 32
+  },
+  "백업 해제": {
+   "corruption_hyps": 0,
+   "lost_vs_full": 32,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 32
+  }
+ },
+ "상태 불변 대조 프로브 제거(P_TAMPER_K+P_REVOKE)": {
+  "기기 종속": {
+   "corruption_hyps": 80,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 64
+  },
+  "동기화 전": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 28
+  },
+  "동기화 완료": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 28
+  },
+  "백업 해제": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 28
+  }
+ },
+ "확인 단계 + 상태 불변 대조 프로브 제거": {
+  "기기 종속": {
+   "corruption_hyps": 80,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 64
+  },
+  "동기화 전": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 28
+  },
+  "동기화 완료": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 28
+  },
+  "백업 해제": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 28
+  }
+ },
+ "무효 서명 대조 전부 제거 — BE·BS 경로(P_CORRUPT만, 확인 없음)": {
+  "기기 종속": {
+   "corruption_hyps": 64,
+   "lost_vs_full": 24,
+   "corruption_with_noncorr_twin": 8,
+   "noncorr_with_corr_twin": 16,
+   "distinct_signatures": 46
+  },
+  "동기화 전": {
+   "corruption_hyps": 0,
+   "lost_vs_full": 32,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 24
+  },
+  "동기화 완료": {
+   "corruption_hyps": 0,
+   "lost_vs_full": 32,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 24
+  },
+  "백업 해제": {
+   "corruption_hyps": 0,
+   "lost_vs_full": 32,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 24
+  }
+ },
+ "무효 서명 대조 전부 제거 — 카운터 경로(P_CORRUPT_CTR만, 확인 없음)": {
+  "기기 종속": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 48,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 40
+  },
+  "동기화 전": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 28
+  },
+  "동기화 완료": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 28
+  },
+  "백업 해제": {
+   "corruption_hyps": 32,
+   "lost_vs_full": 0,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 28
+  }
+ },
+ "BE·BS 경로, 확인 단계만 있음(P_CORRUPT만)": {
+  "기기 종속": {
+   "corruption_hyps": 64,
+   "lost_vs_full": 16,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 48
+  },
+  "동기화 전": {
+   "corruption_hyps": 0,
+   "lost_vs_full": 32,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 24
+  },
+  "동기화 완료": {
+   "corruption_hyps": 0,
+   "lost_vs_full": 32,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 24
+  },
+  "백업 해제": {
+   "corruption_hyps": 0,
+   "lost_vs_full": 32,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 24
+  }
+ },
+ "BE·BS 경로, 상태 불변 대조만 있음(P_CORRUPT만, 확인 없음)": {
+  "기기 종속": {
+   "corruption_hyps": 64,
+   "lost_vs_full": 16,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 80
+  },
+  "동기화 전": {
+   "corruption_hyps": 0,
+   "lost_vs_full": 32,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 32
+  },
+  "동기화 완료": {
+   "corruption_hyps": 0,
+   "lost_vs_full": 32,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 32
+  },
+  "백업 해제": {
+   "corruption_hyps": 0,
+   "lost_vs_full": 32,
+   "corruption_with_noncorr_twin": 0,
+   "noncorr_with_corr_twin": 0,
+   "distinct_signatures": 32
+  }
+ }
+}

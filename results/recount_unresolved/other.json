@@ -1,0 +1,144 @@
+{
+ "results/round5_b/q0.01/authelia-4.39.28": {
+  "undetermined": 4,
+  "unresolved_block": 25,
+  "no_block": 1
+ },
+ "results/round5_b/q0.01/authelia-mc-4.39.28": {
+  "undetermined": 3,
+  "state_corruption": 27
+ },
+ "results/round5_b/q0.01/gitea-1.24.0": {
+  "no_block": 23,
+  "normal_policy": 2,
+  "undetermined": 5
+ },
+ "results/round5_b/q0.01/keycloak-26.0.7-bf_on": {
+  "normal_policy": 27,
+  "undetermined": 3
+ },
+ "results/round5_b/q0.01/vaultwarden-1.35.4": {
+  "state_corruption": 30
+ },
+ "results/round5_b/q0.01/vaultwarden-1.35.5": {
+  "no_block": 26,
+  "undetermined": 4
+ },
+ "results/round5_b/q0.05/authelia-4.39.28": {
+  "unresolved_block": 11,
+  "undetermined": 16,
+  "no_block": 1,
+  "normal_policy": 2
+ },
+ "results/round5_b/q0.05/authelia-mc-4.39.28": {
+  "state_corruption": 26,
+  "undetermined": 4
+ },
+ "results/round5_b/q0.05/gitea-1.24.0": {
+  "no_block": 16,
+  "undetermined": 14
+ },
+ "results/round5_b/q0.05/keycloak-26.0.7-bf_on": {
+  "normal_policy": 21,
+  "undetermined": 7,
+  "no_block": 2
+ },
+ "results/round5_b/q0.05/vaultwarden-1.35.4": {
+  "state_corruption": 25,
+  "undetermined": 5
+ },
+ "results/round5_b/q0.05/vaultwarden-1.35.5": {
+  "no_block": 16,
+  "normal_policy": 2,
+  "undetermined": 12
+ },
+ "results/round7/obs/hk-X01": {
+  "state_corruption": 30
+ },
+ "results/round7/obs/hk-X02": {
+  "no_block": 30
+ },
+ "results/round7/obs/hk-X05": {
+  "no_block": 30
+ },
+ "results/round7/obs/hk-X09": {
+  "no_block": 30
+ },
+ "results/round7/obs/pi-X03": {
+  "no_block": 29,
+  "undetermined": 1
+ },
+ "results/round7/obs/pi-X04": {
+  "no_block": 29,
+  "undetermined": 1
+ },
+ "results/round7/obs/pi-X06": {
+  "no_block": 29,
+  "undetermined": 1
+ },
+ "results/round7/obs/pi-X07": {
+  "state_corruption": 30
+ },
+ "results/round7/obs/pi-X08": {
+  "no_block": 29,
+  "undetermined": 1
+ },
+ "results/round7b/obs/pi-Y01": {
+  "no_block": 30
+ },
+ "results/round7b/obs/pi-Y02": {
+  "normal_policy": 30
+ },
+ "results/round7b/obs/pi-Y03": {
+  "normal_policy": 30
+ },
+ "results/round7b/obs/pi-Y04": {
+  "state_corruption": 30
+ },
+ "results/round8/t3/C1-fs2-L0": {
+  "state_corruption": 29,
+  "undetermined": 1
+ },
+ "results/round8/t3/C2-fs2-L5": {
+  "undetermined": 10,
+  "state_corruption": 38,
+  "no_block": 12
+ },
+ "results/round8/t3/C3-fs2-L10": {
+  "state_corruption": 25,
+  "no_block": 25,
+  "undetermined": 10
+ },
+ "results/round8/t3/C4-fs2-L10-s30": {
+  "state_corruption": 22,
+  "undetermined": 4,
+  "no_block": 4
+ },
+ "results/round8/t3/C5-orig-L5": {
+  "no_block": 28,
+  "undetermined": 2
+ },
+ "results/round8/t3/C6-orig-L10": {
+  "no_block": 26,
+  "undetermined": 4
+ },
+ "results/round9/R1-fs2-improved": {
+  "state_corruption": 26,
+  "undetermined": 2,
+  "no_block": 2
+ },
+ "results/round9/R2-orig-improved": {
+  "no_block": 27,
+  "undetermined": 3
+ },
+ "results/round9/R3-rep-base": {
+  "no_block": 9,
+  "normal_policy": 19,
+  "undetermined": 2
+ },
+ "results/round9/R4-rep-improved": {
+  "normal_policy": 25,
+  "no_block": 2,
+  "undetermined": 3
+ }
+}

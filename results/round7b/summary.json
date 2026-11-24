@@ -1,0 +1,294 @@
+{
+ "per_condition": {
+  "PI-orig2": {
+   "code": "pi-Y01",
+   "truth": "no_block",
+   "n": 30,
+   "block_cause": {
+    "no_block": 30
+   },
+   "defect_presence": {
+    "undetermined": 30
+   },
+   "FAILSAFE": {
+    "dist": {
+     "no_block": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "R4 규칙": {
+    "dist": {
+     "no_block": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "v2 규칙": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "복구만": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단순 재시도": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단일 응답": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   }
+  },
+  "PI-amf1": {
+   "code": "pi-Y02",
+   "truth": "normal_policy",
+   "n": 30,
+   "block_cause": {
+    "normal_policy": 30
+   },
+   "defect_presence": {
+    "undetermined": 30
+   },
+   "FAILSAFE": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "R4 규칙": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "v2 규칙": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "복구만": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "단순 재시도": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 30,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단일 응답": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   }
+  },
+  "PI-amf10": {
+   "code": "pi-Y03",
+   "truth": "normal_policy",
+   "n": 30,
+   "block_cause": {
+    "normal_policy": 30
+   },
+   "defect_presence": {
+    "undetermined": 30
+   },
+   "FAILSAFE": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "R4 규칙": {
+    "dist": {
+     "undetermined": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 30,
+    "label_ok": 0
+   },
+   "v2 규칙": {
+    "dist": {
+     "undetermined": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 30,
+    "label_ok": 0
+   },
+   "복구만": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 30,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단순 재시도": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 30,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단일 응답": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   }
+  },
+  "PI-C2": {
+   "code": "pi-Y04",
+   "truth": "state_corruption",
+   "n": 30,
+   "block_cause": {
+    "state_corruption": 30
+   },
+   "defect_presence": {
+    "state_corruption": 30
+   },
+   "FAILSAFE": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "R4 규칙": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "v2 규칙": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "복구만": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "단순 재시도": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "단일 응답": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 30,
+    "hit": 0,
+    "und": 0,
+    "label_ok": null
+   }
+  }
+ },
+ "criteria": {
+  "a_detect_majority": true,
+  "b_no_false_corruption": true,
+  "c_no_confident_miss": true,
+  "passed": true
+ }
+}

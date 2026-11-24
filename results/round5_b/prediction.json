@@ -1,0 +1,2742 @@
+{
+ "seed": 20261116,
+ "params": {
+  "eps": 0.1,
+  "tau": 0.99,
+  "m": 2,
+  "per_probe_a1": true
+ },
+ "per_q": {
+  "0.01": {
+   "vaultwarden-1.35.4": {
+    "truth": "state_corruption",
+    "faults_total_paired": 9,
+    "trials_with_fault_paired": 8,
+    "paired:FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 0
+    },
+    "paired:v2 규칙": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 0
+    },
+    "dist:FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 873,
+      "undetermined": 27
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 27
+    },
+    "dist:v2 규칙": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 873,
+      "undetermined": 27
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 27
+    },
+    "paired_trials": [
+     {
+      "rep": 0,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 1,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 2,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 3,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 4,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 5,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 6,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 7,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 8,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 9,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 10,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 11,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 12,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 13,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 14,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 15,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 16,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 17,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 18,
+      "n_fault": 2,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 19,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 20,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 21,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 22,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 23,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 24,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 25,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 26,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 27,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 28,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 29,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     }
+    ]
+   },
+   "authelia-mc-4.39.28": {
+    "truth": "state_corruption",
+    "faults_total_paired": 15,
+    "trials_with_fault_paired": 11,
+    "paired:FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "undetermined": 3,
+      "state_corruption": 27
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 3
+    },
+    "paired:v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 30
+    },
+    "dist:FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 859,
+      "undetermined": 41
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 41
+    },
+    "dist:v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 900
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 900
+    },
+    "paired_trials": [
+     {
+      "rep": 0,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 1,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 2,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 3,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 4,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 5,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 6,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 7,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 8,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 9,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 10,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 11,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 12,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 13,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 14,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 15,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 16,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 17,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 18,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 19,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 20,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 21,
+      "n_fault": 2,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 22,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 23,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 24,
+      "n_fault": 4,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 25,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 26,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 27,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 28,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 29,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     }
+    ]
+   },
+   "vaultwarden-1.35.5": {
+    "truth": "no_block",
+    "faults_total_paired": 13,
+    "trials_with_fault_paired": 12,
+    "paired:FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 26,
+      "undetermined": 4
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 4
+    },
+    "paired:v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 23,
+      "undetermined": 7
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 7
+    },
+    "dist:FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "no_block": 758,
+      "normal_policy": 34,
+      "undetermined": 108
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 108
+    },
+    "dist:v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 212,
+      "normal_policy": 688
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 212
+    },
+    "paired_trials": [
+     {
+      "rep": 0,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 1,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 2,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 3,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 4,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 5,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 6,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 7,
+      "n_fault": 2,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 8,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 9,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 10,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 11,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 12,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 13,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 14,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 15,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 16,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 17,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 18,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 19,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 20,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 21,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 22,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 23,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 24,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 25,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 26,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 27,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 28,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 29,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "normal_policy"
+     }
+    ]
+   },
+   "keycloak-26.0.7-bf_on": {
+    "truth": "normal_policy",
+    "faults_total_paired": 19,
+    "trials_with_fault_paired": 16,
+    "paired:FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 27,
+      "undetermined": 3
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 3
+    },
+    "paired:v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 20,
+      "undetermined": 10
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 10
+    },
+    "dist:FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 809,
+      "no_block": 22,
+      "undetermined": 69
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 69
+    },
+    "dist:v2 규칙": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 693,
+      "undetermined": 207
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 207
+    },
+    "paired_trials": [
+     {
+      "rep": 0,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 1,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 2,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 3,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 4,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 5,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 6,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 7,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 8,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 9,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 10,
+      "n_fault": 2,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 11,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 12,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 13,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 14,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 15,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 16,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 17,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 18,
+      "n_fault": 2,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 19,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 20,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 21,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 22,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 23,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 24,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 25,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 26,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 27,
+      "n_fault": 2,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 28,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 29,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     }
+    ]
+   },
+   "authelia-4.39.28": {
+    "truth": "normal_policy",
+    "faults_total_paired": 16,
+    "trials_with_fault_paired": 14,
+    "paired:FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "undetermined": 4,
+      "normal_policy": 25,
+      "no_block": 1
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 4
+    },
+    "paired:v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 30
+    },
+    "dist:FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 753,
+      "undetermined": 112,
+      "no_block": 35
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 112
+    },
+    "dist:v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 900
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 900
+    },
+    "paired_trials": [
+     {
+      "rep": 0,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 1,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 2,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 3,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 4,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 5,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 6,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 7,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 8,
+      "n_fault": 2,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 9,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 10,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 11,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 12,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 13,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 14,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 15,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 16,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 17,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 18,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 19,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 20,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 21,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 22,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 23,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 24,
+      "n_fault": 2,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 25,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 26,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 27,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 28,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 29,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     }
+    ]
+   },
+   "gitea-1.24.0": {
+    "truth": "no_block",
+    "faults_total_paired": 12,
+    "trials_with_fault_paired": 11,
+    "paired:FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 23,
+      "normal_policy": 2,
+      "undetermined": 5
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 5
+    },
+    "paired:v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 25,
+      "undetermined": 5
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 5
+    },
+    "dist:FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "no_block": 750,
+      "normal_policy": 30,
+      "undetermined": 120
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 120
+    },
+    "dist:v2 규칙": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 713,
+      "undetermined": 187
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 187
+    },
+    "paired_trials": [
+     {
+      "rep": 0,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 1,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 2,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 3,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 4,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 5,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 6,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 7,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 8,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 9,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 10,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 11,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 12,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 13,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 14,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 15,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 16,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 17,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 18,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 19,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 20,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 21,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 22,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 23,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 24,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 25,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 26,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 27,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 28,
+      "n_fault": 2,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 29,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     }
+    ]
+   }
+  },
+  "0.05": {
+   "vaultwarden-1.35.4": {
+    "truth": "state_corruption",
+    "faults_total_paired": 67,
+    "trials_with_fault_paired": 25,
+    "paired:FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 25,
+      "undetermined": 5
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 5
+    },
+    "paired:v2 규칙": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 25,
+      "undetermined": 5
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 5
+    },
+    "dist:FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 777,
+      "undetermined": 123
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 123
+    },
+    "dist:v2 규칙": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 778,
+      "undetermined": 122
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 122
+    },
+    "paired_trials": [
+     {
+      "rep": 0,
+      "n_fault": 2,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 1,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 2,
+      "n_fault": 5,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 3,
+      "n_fault": 3,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 4,
+      "n_fault": 3,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 5,
+      "n_fault": 4,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 6,
+      "n_fault": 2,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 7,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 8,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 9,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 10,
+      "n_fault": 4,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 11,
+      "n_fault": 7,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 12,
+      "n_fault": 3,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 13,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 14,
+      "n_fault": 2,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 15,
+      "n_fault": 2,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 16,
+      "n_fault": 3,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 17,
+      "n_fault": 3,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 18,
+      "n_fault": 7,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 19,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 20,
+      "n_fault": 3,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 21,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 22,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 23,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 24,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 25,
+      "n_fault": 2,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 26,
+      "n_fault": 3,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 27,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 28,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     },
+     {
+      "rep": 29,
+      "n_fault": 2,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "state_corruption"
+     }
+    ]
+   },
+   "authelia-mc-4.39.28": {
+    "truth": "state_corruption",
+    "faults_total_paired": 68,
+    "trials_with_fault_paired": 28,
+    "paired:FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 26,
+      "undetermined": 4
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 4
+    },
+    "paired:v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 30
+    },
+    "dist:FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 645,
+      "undetermined": 255
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 255
+    },
+    "dist:v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 900
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 900
+    },
+    "paired_trials": [
+     {
+      "rep": 0,
+      "n_fault": 3,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 1,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 2,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 3,
+      "n_fault": 3,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 4,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 5,
+      "n_fault": 4,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 6,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 7,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 8,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 9,
+      "n_fault": 2,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 10,
+      "n_fault": 2,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 11,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 12,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 13,
+      "n_fault": 6,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 14,
+      "n_fault": 3,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 15,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 16,
+      "n_fault": 5,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 17,
+      "n_fault": 3,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 18,
+      "n_fault": 4,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 19,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 20,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 21,
+      "n_fault": 0,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 22,
+      "n_fault": 3,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 23,
+      "n_fault": 1,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 24,
+      "n_fault": 3,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 25,
+      "n_fault": 3,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 26,
+      "n_fault": 5,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 27,
+      "n_fault": 4,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 28,
+      "n_fault": 2,
+      "FAILSAFE": "state_corruption",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 29,
+      "n_fault": 2,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     }
+    ]
+   },
+   "vaultwarden-1.35.5": {
+    "truth": "no_block",
+    "faults_total_paired": 83,
+    "trials_with_fault_paired": 29,
+    "paired:FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 16,
+      "normal_policy": 2,
+      "undetermined": 12
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 12
+    },
+    "paired:v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 22,
+      "normal_policy": 8
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 22
+    },
+    "dist:FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "no_block": 395,
+      "undetermined": 439,
+      "normal_policy": 66
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 439
+    },
+    "dist:v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 683,
+      "normal_policy": 217
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 683
+    },
+    "paired_trials": [
+     {
+      "rep": 0,
+      "n_fault": 3,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 1,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 2,
+      "n_fault": 3,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 3,
+      "n_fault": 5,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 4,
+      "n_fault": 3,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 5,
+      "n_fault": 2,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 6,
+      "n_fault": 4,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 7,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 8,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 9,
+      "n_fault": 3,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 10,
+      "n_fault": 7,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 11,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 12,
+      "n_fault": 2,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 13,
+      "n_fault": 5,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 14,
+      "n_fault": 6,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 15,
+      "n_fault": 2,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 16,
+      "n_fault": 3,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 17,
+      "n_fault": 2,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 18,
+      "n_fault": 2,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 19,
+      "n_fault": 2,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 20,
+      "n_fault": 5,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 21,
+      "n_fault": 5,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 22,
+      "n_fault": 3,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 23,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 24,
+      "n_fault": 2,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 25,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 26,
+      "n_fault": 3,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 27,
+      "n_fault": 2,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 28,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 29,
+      "n_fault": 3,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     }
+    ]
+   },
+   "keycloak-26.0.7-bf_on": {
+    "truth": "normal_policy",
+    "faults_total_paired": 72,
+    "trials_with_fault_paired": 27,
+    "paired:FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 21,
+      "undetermined": 7,
+      "no_block": 2
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 7
+    },
+    "paired:v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 10,
+      "undetermined": 20
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 20
+    },
+    "dist:FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 490,
+      "undetermined": 335,
+      "no_block": 75
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 335
+    },
+    "dist:v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 687,
+      "normal_policy": 213
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 687
+    },
+    "paired_trials": [
+     {
+      "rep": 0,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 1,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 2,
+      "n_fault": 4,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 3,
+      "n_fault": 3,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 4,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 5,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 6,
+      "n_fault": 3,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 7,
+      "n_fault": 5,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 8,
+      "n_fault": 4,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 9,
+      "n_fault": 3,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 10,
+      "n_fault": 5,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 11,
+      "n_fault": 5,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 12,
+      "n_fault": 4,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 13,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 14,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 15,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 16,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 17,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 18,
+      "n_fault": 4,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 19,
+      "n_fault": 4,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 20,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 21,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 22,
+      "n_fault": 2,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 23,
+      "n_fault": 5,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 24,
+      "n_fault": 2,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 25,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 26,
+      "n_fault": 2,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 27,
+      "n_fault": 4,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 28,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 29,
+      "n_fault": 3,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     }
+    ]
+   },
+   "authelia-4.39.28": {
+    "truth": "normal_policy",
+    "faults_total_paired": 81,
+    "trials_with_fault_paired": 29,
+    "paired:FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 13,
+      "undetermined": 16,
+      "no_block": 1
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 16
+    },
+    "paired:v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 30
+    },
+    "dist:FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "undetermined": 418,
+      "no_block": 106,
+      "normal_policy": 376
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 418
+    },
+    "dist:v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 900
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 900
+    },
+    "paired_trials": [
+     {
+      "rep": 0,
+      "n_fault": 3,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 1,
+      "n_fault": 2,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 2,
+      "n_fault": 0,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 3,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 4,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 5,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 6,
+      "n_fault": 3,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 7,
+      "n_fault": 2,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 8,
+      "n_fault": 2,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 9,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 10,
+      "n_fault": 6,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 11,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 12,
+      "n_fault": 3,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 13,
+      "n_fault": 2,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 14,
+      "n_fault": 3,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 15,
+      "n_fault": 5,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 16,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 17,
+      "n_fault": 2,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 18,
+      "n_fault": 3,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 19,
+      "n_fault": 3,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 20,
+      "n_fault": 5,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 21,
+      "n_fault": 3,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 22,
+      "n_fault": 4,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 23,
+      "n_fault": 3,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 24,
+      "n_fault": 5,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 25,
+      "n_fault": 2,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 26,
+      "n_fault": 5,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 27,
+      "n_fault": 3,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 28,
+      "n_fault": 5,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 29,
+      "n_fault": 1,
+      "FAILSAFE": "normal_policy",
+      "v2 규칙": "undetermined"
+     }
+    ]
+   },
+   "gitea-1.24.0": {
+    "truth": "no_block",
+    "faults_total_paired": 86,
+    "trials_with_fault_paired": 27,
+    "paired:FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 16,
+      "undetermined": 14
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 14
+    },
+    "paired:v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 24,
+      "normal_policy": 6
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 24
+    },
+    "dist:FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "undetermined": 375,
+      "no_block": 434,
+      "normal_policy": 91
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 375
+    },
+    "dist:v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 672,
+      "normal_policy": 228
+     },
+     "fp": 0,
+     "miss": 0,
+     "undetermined": 672
+    },
+    "paired_trials": [
+     {
+      "rep": 0,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 1,
+      "n_fault": 6,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 2,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 3,
+      "n_fault": 4,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 4,
+      "n_fault": 6,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 5,
+      "n_fault": 6,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 6,
+      "n_fault": 4,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 7,
+      "n_fault": 2,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 8,
+      "n_fault": 4,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 9,
+      "n_fault": 3,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 10,
+      "n_fault": 5,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 11,
+      "n_fault": 2,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 12,
+      "n_fault": 5,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 13,
+      "n_fault": 5,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 14,
+      "n_fault": 2,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 15,
+      "n_fault": 1,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 16,
+      "n_fault": 3,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 17,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 18,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 19,
+      "n_fault": 4,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 20,
+      "n_fault": 3,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 21,
+      "n_fault": 3,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 22,
+      "n_fault": 2,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 23,
+      "n_fault": 3,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 24,
+      "n_fault": 4,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 25,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 26,
+      "n_fault": 3,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 27,
+      "n_fault": 1,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     },
+     {
+      "rep": 28,
+      "n_fault": 2,
+      "FAILSAFE": "undetermined",
+      "v2 규칙": "undetermined"
+     },
+     {
+      "rep": 29,
+      "n_fault": 0,
+      "FAILSAFE": "no_block",
+      "v2 규칙": "normal_policy"
+     }
+    ]
+   }
+  }
+ }
+}

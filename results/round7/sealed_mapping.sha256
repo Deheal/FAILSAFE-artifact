@@ -1,0 +1,6 @@
+# 7차 블라인드 대응표 해시 (scripts/round7/blind.py)
+# seal-1 (폐기): 2041fae3b39b0ddbc6888d49b25af3cdb28ba816190acb7d6a4184ee5e3d938c
+#   실행 단계 오류를 확인하다가 변이 스크립트 출력 때문에 코드 2개(hk-X06, pi-X03)의 조건이 연구자에게 노출됨.
+#   관측 수집 전이므로 폐기하고 재봉인함. 폐기본은 ~/r7/sealed/mapping.exposed-1.json(공개 때 함께 공개).
+# seal-2 (사용): 2026-11-16, 관측 수집 전
+a3d3cc8eb328d1288a9932c00ca979a5d3b63497f5c6556f74937cf05dedf78f  ~/r7/sealed/mapping.json

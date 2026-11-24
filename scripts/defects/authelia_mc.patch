@@ -1,0 +1,25 @@
+--- authelia-src/internal/handlers/handler_sign_webauthn.go	2026-11-12 14:34:44.974688539 +0900
++++ authelia-mc/internal/handlers/handler_sign_webauthn.go	2026-11-14 04:31:04.513761365 +0900
+@@ -207,6 +207,22 @@
+ 		return
+ 	}
+ 
++	// FAILSAFE mutation M_C (docs/round4_plan.md 3): persist the UNVERIFIED signCount before validation.
++	// Validation still uses the in-memory credential (value before the write).
++	for i := range user.Credentials {
++		if bytes.Equal(user.Credentials[i].KID.Bytes(), response.RawID) {
++			if n := response.Response.AuthenticatorData.Counter; n > user.Credentials[i].SignCount {
++				mc := user.Credentials[i]
++				mc.SignCount = n
++				if err = ctx.Providers.StorageProvider.UpdateWebAuthnCredentialSignIn(ctx, mc); err != nil {
++					ctx.Logger.WithError(err).Error("M_C: failed to persist sign count")
++				}
++			}
++
++			break
++		}
++	}
++
+ 	if c, err = w.ValidateLogin(user, *userSession.WebAuthn.SessionData, response); err != nil {
+ 		doMarkAuthenticationAttempt(ctx, false, regulation.NewBan(regulation.BanTypeNone, userSession.Username, nil), regulation.AuthTypeWebAuthn, iwebauthn.FormatError(err))
+ 

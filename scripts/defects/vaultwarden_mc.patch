@@ -1,0 +1,31 @@
+--- vw-src/src/api/core/two_factor/webauthn.rs	2026-11-14 04:33:12.308126501 +0900
++++ vw-mc/src/api/core/two_factor/webauthn.rs	2026-11-14 04:33:13.127774228 +0900
+@@ -440,6 +440,28 @@
+     // Because of this we check the flag at runtime and update the registrations and state when needed
+     let backup_flags_updated = check_and_update_backup_eligible(&rsp, &mut registrations, &mut state)?;
+ 
++    // FAILSAFE mutation M_C (docs/round4_plan.md 3): persist the UNVERIFIED signCount before verification.
++    // `state` and in-memory `registrations` are untouched; only a serialized copy is changed and saved.
++    if let Some(ad) = rsp.response.authenticator_data.get(33..37) {
++        let mc_count = u32::from_be_bytes([ad[0], ad[1], ad[2], ad[3]]);
++        let mut mc_regs: Vec<WebauthnRegistration> = serde_json::from_str(&serde_json::to_string(&registrations)?)?;
++        let mut mc_changed = false;
++        for reg in &mut mc_regs {
++            if ct_eq(reg.credential.cred_id().as_slice(), rsp.raw_id.as_slice()) {
++                let mut cred: Credential = reg.credential.clone().into();
++                if mc_count > cred.counter {
++                    cred.counter = mc_count;
++                    reg.credential = cred.into();
++                    mc_changed = true;
++                }
++                break;
++            }
++        }
++        if mc_changed {
++            TwoFactor::new(user_id.clone(), TwoFactorType::Webauthn, serde_json::to_string(&mc_regs)?).save(conn).await?;
++        }
++    }
++
+     let authentication_result = WEBAUTHN.finish_passkey_authentication(&rsp, &state)?;
+ 
+     for reg in &mut registrations {

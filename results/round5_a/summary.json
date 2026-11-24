@@ -1,0 +1,3383 @@
+{
+ "params": {
+  "eps": 0.1,
+  "tau": 0.99,
+  "m": 2,
+  "per_probe_a1": true
+ },
+ "seed": 20261115,
+ "draws": 30,
+ "condition_order": [
+  "authelia-4.39.28",
+  "authelia-fs1-4.39.28",
+  "authelia-mc-4.39.28",
+  "authelia-src-4.39.28",
+  "authentik-2024.10.5",
+  "authentik-fs2-2024.10.5",
+  "gitea-1.24.0",
+  "kanidm-1.12.0",
+  "keycloak-26.0.7-bf_off",
+  "keycloak-26.0.7-bf_on",
+  "keycloak-26.0.7-bf_perm",
+  "vaultwarden-1.35.4",
+  "vaultwarden-1.35.4-synced",
+  "vaultwarden-1.35.5",
+  "vaultwarden-1.35.5-synced",
+  "vaultwarden-mc-1.35.5",
+  "zitadel-4.20.1"
+ ],
+ "per_condition": {
+  "0.0": {
+   "authelia-4.39.28": {
+    "truth": "normal_policy",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 30,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 30,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 30,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    }
+   },
+   "authentik-2024.10.5": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 29,
+      "undetermined": 1
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 1,
+     "label_correct": 29
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "authentik-fs2-2024.10.5": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 30,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "kanidm-1.12.0": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "keycloak-26.0.7-bf_off": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "authelia-fs1-4.39.28": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 30,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "authelia-mc-4.39.28": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 0,
+     "undetermined": 30,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 30,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "authelia-src-4.39.28": {
+    "truth": "normal_policy",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 30,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 30,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 30,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    }
+   },
+   "gitea-1.24.0": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "keycloak-26.0.7-bf_on": {
+    "truth": "normal_policy",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 30,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    }
+   },
+   "keycloak-26.0.7-bf_perm": {
+    "truth": "normal_policy",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 26,
+      "normal_policy": 4
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 26,
+     "label_correct": 4
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 26,
+      "normal_policy": 4
+     },
+     "false_corruption": 26,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 4
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 30,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    }
+   },
+   "vaultwarden-1.35.4": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 30,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "vaultwarden-mc-1.35.5": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 30,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 30,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "vaultwarden-1.35.5": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "zitadel-4.20.1": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "vaultwarden-1.35.4-synced": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "vaultwarden-1.35.5-synced": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 30
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   }
+  },
+  "0.01": {
+   "authelia-fs1-4.39.28": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 847,
+      "undetermined": 53
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 847,
+     "undetermined": 53,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 843,
+      "undetermined": 57
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 843,
+     "undetermined": 57,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 900,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 900,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 900,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "authelia-4.39.28": {
+    "truth": "normal_policy",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 751,
+      "undetermined": 85,
+      "no_block": 64
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 85,
+     "label_correct": 751
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 882,
+      "normal_policy": 18
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 882,
+     "label_correct": 18
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 873,
+      "normal_policy": 27
+     },
+     "false_corruption": 873,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 27
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 877,
+      "normal_policy": 23
+     },
+     "false_corruption": 877,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 23
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 900
+    }
+   },
+   "keycloak-26.0.7-bf_on": {
+    "truth": "normal_policy",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 792,
+      "no_block": 24,
+      "undetermined": 84
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 84,
+     "label_correct": 792
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 238,
+      "normal_policy": 662
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 238,
+     "label_correct": 662
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 896,
+      "state_corruption": 4
+     },
+     "false_corruption": 4,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 896
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 876,
+      "normal_policy": 24
+     },
+     "false_corruption": 876,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 24
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 900
+    }
+   },
+   "kanidm-1.12.0": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "no_block": 767,
+      "normal_policy": 40,
+      "undetermined": 93
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 93,
+     "label_correct": 767
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 696,
+      "undetermined": 204
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 204,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 899,
+      "state_corruption": 1
+     },
+     "false_corruption": 1,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "authentik-fs2-2024.10.5": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 849,
+      "undetermined": 51
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 849,
+     "undetermined": 51,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 843,
+      "undetermined": 54,
+      "normal_policy": 3
+     },
+     "false_corruption": 0,
+     "confident_miss": 3,
+     "detected": 843,
+     "undetermined": 54,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 894,
+      "normal_policy": 6
+     },
+     "false_corruption": 0,
+     "confident_miss": 6,
+     "detected": 894,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 895,
+      "normal_policy": 5
+     },
+     "false_corruption": 0,
+     "confident_miss": 5,
+     "detected": 895,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 900,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "authelia-src-4.39.28": {
+    "truth": "normal_policy",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 762,
+      "no_block": 44,
+      "undetermined": 94
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 94,
+     "label_correct": 762
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 892,
+      "normal_policy": 8
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 892,
+     "label_correct": 8
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 889,
+      "normal_policy": 11
+     },
+     "false_corruption": 889,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 11
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 890,
+      "normal_policy": 10
+     },
+     "false_corruption": 890,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 10
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 900
+    }
+   },
+   "keycloak-26.0.7-bf_off": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "no_block": 799,
+      "undetermined": 67,
+      "normal_policy": 34
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 67,
+     "label_correct": 799
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 691,
+      "undetermined": 209
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 209,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "authelia-mc-4.39.28": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 837,
+      "undetermined": 63
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 837,
+     "undetermined": 63,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 892,
+      "state_corruption": 8
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 8,
+     "undetermined": 892,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 900,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 900,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 900,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "gitea-1.24.0": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "no_block": 769,
+      "undetermined": 95,
+      "normal_policy": 36
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 95,
+     "label_correct": 769
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 720,
+      "undetermined": 180
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 180,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 899,
+      "state_corruption": 1
+     },
+     "false_corruption": 1,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "authentik-2024.10.5": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "no_block": 738,
+      "undetermined": 128,
+      "normal_policy": 34
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 128,
+     "label_correct": 738
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 701,
+      "undetermined": 199
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 199,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 899,
+      "state_corruption": 1
+     },
+     "false_corruption": 1,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 898,
+      "state_corruption": 2
+     },
+     "false_corruption": 2,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "vaultwarden-1.35.4": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 850,
+      "undetermined": 50
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 850,
+     "undetermined": 50,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 855,
+      "undetermined": 37,
+      "normal_policy": 8
+     },
+     "false_corruption": 0,
+     "confident_miss": 8,
+     "detected": 855,
+     "undetermined": 37,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 888,
+      "normal_policy": 12
+     },
+     "false_corruption": 0,
+     "confident_miss": 12,
+     "detected": 888,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 880,
+      "normal_policy": 20
+     },
+     "false_corruption": 0,
+     "confident_miss": 20,
+     "detected": 880,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 900,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "vaultwarden-1.35.5-synced": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "no_block": 816,
+      "normal_policy": 35,
+      "undetermined": 49
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 49,
+     "label_correct": 816
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 200,
+      "normal_policy": 700
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 200,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 898,
+      "state_corruption": 2
+     },
+     "false_corruption": 2,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 899,
+      "state_corruption": 1
+     },
+     "false_corruption": 1,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "vaultwarden-1.35.4-synced": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "no_block": 819,
+      "normal_policy": 28,
+      "undetermined": 53
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 53,
+     "label_correct": 819
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 680,
+      "undetermined": 220
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 220,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 899,
+      "state_corruption": 1
+     },
+     "false_corruption": 1,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "keycloak-26.0.7-bf_perm": {
+    "truth": "normal_policy",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 801,
+      "undetermined": 77,
+      "no_block": 22
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 77,
+     "label_correct": 801
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 801,
+      "normal_policy": 99
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 801,
+     "label_correct": 99
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 771,
+      "normal_policy": 129
+     },
+     "false_corruption": 771,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 129
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 881,
+      "normal_policy": 19
+     },
+     "false_corruption": 881,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 19
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 900
+    }
+   },
+   "vaultwarden-1.35.5": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "undetermined": 120,
+      "no_block": 748,
+      "normal_policy": 32
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 120,
+     "label_correct": 748
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 224,
+      "normal_policy": 676
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 224,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "vaultwarden-mc-1.35.5": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 848,
+      "undetermined": 52
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 848,
+     "undetermined": 52,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 849,
+      "undetermined": 43,
+      "normal_policy": 8
+     },
+     "false_corruption": 0,
+     "confident_miss": 8,
+     "detected": 849,
+     "undetermined": 43,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 888,
+      "normal_policy": 12
+     },
+     "false_corruption": 0,
+     "confident_miss": 12,
+     "detected": 888,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 885,
+      "normal_policy": 15
+     },
+     "false_corruption": 0,
+     "confident_miss": 15,
+     "detected": 885,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 900,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "zitadel-4.20.1": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "undetermined": 89,
+      "no_block": 782,
+      "normal_policy": 29
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 89,
+     "label_correct": 782
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 680,
+      "undetermined": 220
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 220,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 897,
+      "state_corruption": 3
+     },
+     "false_corruption": 3,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 897,
+      "state_corruption": 3
+     },
+     "false_corruption": 3,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   }
+  },
+  "0.05": {
+   "authelia-mc-4.39.28": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 552,
+      "undetermined": 347,
+      "normal_policy": 1
+     },
+     "false_corruption": 0,
+     "confident_miss": 1,
+     "detected": 552,
+     "undetermined": 347,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 862,
+      "state_corruption": 36,
+      "normal_policy": 2
+     },
+     "false_corruption": 0,
+     "confident_miss": 2,
+     "detected": 36,
+     "undetermined": 862,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 890,
+      "normal_policy": 10
+     },
+     "false_corruption": 0,
+     "confident_miss": 10,
+     "detected": 890,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 886,
+      "normal_policy": 14
+     },
+     "false_corruption": 0,
+     "confident_miss": 14,
+     "detected": 886,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 900,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "authelia-fs1-4.39.28": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 640,
+      "undetermined": 260
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 640,
+     "undetermined": 260,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 661,
+      "undetermined": 237,
+      "normal_policy": 2
+     },
+     "false_corruption": 0,
+     "confident_miss": 2,
+     "detected": 661,
+     "undetermined": 237,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 891,
+      "normal_policy": 9
+     },
+     "false_corruption": 0,
+     "confident_miss": 9,
+     "detected": 891,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 895,
+      "normal_policy": 5
+     },
+     "false_corruption": 0,
+     "confident_miss": 5,
+     "detected": 895,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 900,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "authelia-4.39.28": {
+    "truth": "normal_policy",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 374,
+      "undetermined": 389,
+      "no_block": 137
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 389,
+     "label_correct": 374
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 879,
+      "normal_policy": 21
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 879,
+     "label_correct": 21
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 804,
+      "normal_policy": 96
+     },
+     "false_corruption": 804,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 96
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 825,
+      "normal_policy": 75
+     },
+     "false_corruption": 825,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 75
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 900
+    }
+   },
+   "authentik-2024.10.5": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 76,
+      "undetermined": 409,
+      "no_block": 415
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 409,
+     "label_correct": 415
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 658,
+      "normal_policy": 242
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 658,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 887,
+      "state_corruption": 13
+     },
+     "false_corruption": 13,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 885,
+      "state_corruption": 15
+     },
+     "false_corruption": 15,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "authelia-src-4.39.28": {
+    "truth": "normal_policy",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "undetermined": 385,
+      "normal_policy": 387,
+      "no_block": 128
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 385,
+     "label_correct": 387
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 877,
+      "normal_policy": 23
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 877,
+     "label_correct": 23
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 810,
+      "normal_policy": 90
+     },
+     "false_corruption": 810,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 90
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 820,
+      "normal_policy": 80
+     },
+     "false_corruption": 820,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 80
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 900
+    }
+   },
+   "authentik-fs2-2024.10.5": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 649,
+      "undetermined": 251
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 649,
+     "undetermined": 251,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 647,
+      "undetermined": 222,
+      "normal_policy": 31
+     },
+     "false_corruption": 0,
+     "confident_miss": 31,
+     "detected": 647,
+     "undetermined": 222,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 816,
+      "normal_policy": 84
+     },
+     "false_corruption": 0,
+     "confident_miss": 84,
+     "detected": 816,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 835,
+      "normal_policy": 65
+     },
+     "false_corruption": 0,
+     "confident_miss": 65,
+     "detected": 835,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 900,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "kanidm-1.12.0": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "no_block": 440,
+      "undetermined": 375,
+      "normal_policy": 85
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 375,
+     "label_correct": 440
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 220,
+      "undetermined": 680
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 680,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 885,
+      "state_corruption": 15
+     },
+     "false_corruption": 15,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 891,
+      "state_corruption": 9
+     },
+     "false_corruption": 9,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "keycloak-26.0.7-bf_off": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "no_block": 486,
+      "undetermined": 309,
+      "normal_policy": 105
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 309,
+     "label_correct": 486
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 235,
+      "undetermined": 665
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 665,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 881,
+      "state_corruption": 19
+     },
+     "false_corruption": 19,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 889,
+      "state_corruption": 11
+     },
+     "false_corruption": 11,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "vaultwarden-1.35.4": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 657,
+      "undetermined": 243
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": 657,
+     "undetermined": 243,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 665,
+      "undetermined": 216,
+      "normal_policy": 19
+     },
+     "false_corruption": 0,
+     "confident_miss": 19,
+     "detected": 665,
+     "undetermined": 216,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 816,
+      "normal_policy": 84
+     },
+     "false_corruption": 0,
+     "confident_miss": 84,
+     "detected": 816,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 809,
+      "normal_policy": 91
+     },
+     "false_corruption": 0,
+     "confident_miss": 91,
+     "detected": 809,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 900,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "gitea-1.24.0": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "undetermined": 401,
+      "no_block": 409,
+      "normal_policy": 90
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 401,
+     "label_correct": 409
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 244,
+      "undetermined": 656
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 656,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 886,
+      "state_corruption": 14
+     },
+     "false_corruption": 14,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 882,
+      "state_corruption": 18
+     },
+     "false_corruption": 18,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "keycloak-26.0.7-bf_on": {
+    "truth": "normal_policy",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 457,
+      "undetermined": 357,
+      "no_block": 86
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 357,
+     "label_correct": 457
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 702,
+      "normal_policy": 198
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 702,
+     "label_correct": 198
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 843,
+      "state_corruption": 57
+     },
+     "false_corruption": 57,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 843
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 808,
+      "normal_policy": 92
+     },
+     "false_corruption": 808,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 92
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 900
+    }
+   },
+   "keycloak-26.0.7-bf_perm": {
+    "truth": "normal_policy",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 490,
+      "no_block": 67,
+      "undetermined": 343
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 343,
+     "label_correct": 490
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 843,
+      "normal_policy": 57
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 843,
+     "label_correct": 57
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 717,
+      "normal_policy": 183
+     },
+     "false_corruption": 717,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 183
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 797,
+      "normal_policy": 103
+     },
+     "false_corruption": 797,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 103
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 900
+    }
+   },
+   "vaultwarden-1.35.4-synced": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "undetermined": 247,
+      "no_block": 548,
+      "normal_policy": 105
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 247,
+     "label_correct": 548
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 680,
+      "normal_policy": 220
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 680,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 883,
+      "state_corruption": 17
+     },
+     "false_corruption": 17,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 884,
+      "state_corruption": 16
+     },
+     "false_corruption": 16,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "vaultwarden-1.35.5": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "undetermined": 395,
+      "no_block": 410,
+      "normal_policy": 95
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 395,
+     "label_correct": 410
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 683,
+      "normal_policy": 217
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 683,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 883,
+      "state_corruption": 17
+     },
+     "false_corruption": 17,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 889,
+      "state_corruption": 11
+     },
+     "false_corruption": 11,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "vaultwarden-1.35.5-synced": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "no_block": 543,
+      "undetermined": 239,
+      "normal_policy": 118
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 239,
+     "label_correct": 543
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 693,
+      "normal_policy": 207
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 693,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 887,
+      "state_corruption": 13
+     },
+     "false_corruption": 13,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 881,
+      "state_corruption": 19
+     },
+     "false_corruption": 19,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   },
+   "vaultwarden-mc-1.35.5": {
+    "truth": "state_corruption",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 660,
+      "undetermined": 239,
+      "no_block": 1
+     },
+     "false_corruption": 0,
+     "confident_miss": 1,
+     "detected": 660,
+     "undetermined": 239,
+     "label_correct": null
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 652,
+      "undetermined": 227,
+      "normal_policy": 21
+     },
+     "false_corruption": 0,
+     "confident_miss": 21,
+     "detected": 652,
+     "undetermined": 227,
+     "label_correct": null
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 821,
+      "normal_policy": 79
+     },
+     "false_corruption": 0,
+     "confident_miss": 79,
+     "detected": 821,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "state_corruption": 829,
+      "normal_policy": 71
+     },
+     "false_corruption": 0,
+     "confident_miss": 71,
+     "detected": 829,
+     "undetermined": 0,
+     "label_correct": null
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 900,
+     "detected": 0,
+     "undetermined": 0,
+     "label_correct": null
+    }
+   },
+   "zitadel-4.20.1": {
+    "truth": "no_block",
+    "FAILSAFE": {
+     "n": 900,
+     "dist": {
+      "undetermined": 349,
+      "no_block": 457,
+      "normal_policy": 94
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 349,
+     "label_correct": 457
+    },
+    "v2 규칙": {
+     "n": 900,
+     "dist": {
+      "undetermined": 685,
+      "normal_policy": 215
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 685,
+     "label_correct": 0
+    },
+    "복구만": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 879,
+      "state_corruption": 21
+     },
+     "false_corruption": 21,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단순 재시도": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 875,
+      "state_corruption": 25
+     },
+     "false_corruption": 25,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    },
+    "단일 응답": {
+     "n": 900,
+     "dist": {
+      "normal_policy": 900
+     },
+     "false_corruption": 0,
+     "confident_miss": 0,
+     "detected": null,
+     "undetermined": 0,
+     "label_correct": 0
+    }
+   }
+  }
+ },
+ "totals": {
+  "0.0": {
+   "FAILSAFE": {
+    "fp_conditions": 0,
+    "n_neg": 12,
+    "fp_trials": 0,
+    "neg_trials": 360,
+    "miss_conditions": 0,
+    "n_pos": 5,
+    "miss_trials": 0,
+    "pos_trials": 150,
+    "detected_trials": 150,
+    "undetermined_trials": 1,
+    "label_correct_trials": 359,
+    "confident_errors": 0
+   },
+   "v2 규칙": {
+    "fp_conditions": 0,
+    "n_neg": 12,
+    "fp_trials": 0,
+    "neg_trials": 360,
+    "miss_conditions": 0,
+    "n_pos": 5,
+    "miss_trials": 0,
+    "pos_trials": 150,
+    "detected_trials": 120,
+    "undetermined_trials": 116,
+    "label_correct_trials": 34,
+    "confident_errors": 0
+   },
+   "복구만": {
+    "fp_conditions": 3,
+    "n_neg": 12,
+    "fp_trials": 86,
+    "neg_trials": 360,
+    "miss_conditions": 0,
+    "n_pos": 5,
+    "miss_trials": 0,
+    "pos_trials": 150,
+    "detected_trials": 150,
+    "undetermined_trials": 0,
+    "label_correct_trials": 34,
+    "confident_errors": 86
+   },
+   "단순 재시도": {
+    "fp_conditions": 4,
+    "n_neg": 12,
+    "fp_trials": 120,
+    "neg_trials": 360,
+    "miss_conditions": 0,
+    "n_pos": 5,
+    "miss_trials": 0,
+    "pos_trials": 150,
+    "detected_trials": 150,
+    "undetermined_trials": 0,
+    "label_correct_trials": 0,
+    "confident_errors": 120
+   },
+   "단일 응답": {
+    "fp_conditions": 0,
+    "n_neg": 12,
+    "fp_trials": 0,
+    "neg_trials": 360,
+    "miss_conditions": 5,
+    "n_pos": 5,
+    "miss_trials": 150,
+    "pos_trials": 150,
+    "detected_trials": 0,
+    "undetermined_trials": 0,
+    "label_correct_trials": 120,
+    "confident_errors": 150
+   }
+  },
+  "0.01": {
+   "FAILSAFE": {
+    "fp_conditions": 0,
+    "n_neg": 12,
+    "fp_trials": 0,
+    "neg_trials": 10800,
+    "miss_conditions": 0,
+    "n_pos": 5,
+    "miss_trials": 0,
+    "pos_trials": 4500,
+    "detected_trials": 4231,
+    "undetermined_trials": 1303,
+    "label_correct_trials": 9344,
+    "confident_errors": 0
+   },
+   "v2 규칙": {
+    "fp_conditions": 0,
+    "n_neg": 12,
+    "fp_trials": 0,
+    "neg_trials": 10800,
+    "miss_conditions": 3,
+    "n_pos": 5,
+    "miss_trials": 19,
+    "pos_trials": 4500,
+    "detected_trials": 3398,
+    "undetermined_trials": 5552,
+    "label_correct_trials": 787,
+    "confident_errors": 19
+   },
+   "복구만": {
+    "fp_conditions": 7,
+    "n_neg": 12,
+    "fp_trials": 2543,
+    "neg_trials": 10800,
+    "miss_conditions": 3,
+    "n_pos": 5,
+    "miss_trials": 30,
+    "pos_trials": 4500,
+    "detected_trials": 4470,
+    "undetermined_trials": 0,
+    "label_correct_trials": 1063,
+    "confident_errors": 2573
+   },
+   "단순 재시도": {
+    "fp_conditions": 10,
+    "n_neg": 12,
+    "fp_trials": 3533,
+    "neg_trials": 10800,
+    "miss_conditions": 3,
+    "n_pos": 5,
+    "miss_trials": 40,
+    "pos_trials": 4500,
+    "detected_trials": 4460,
+    "undetermined_trials": 0,
+    "label_correct_trials": 76,
+    "confident_errors": 3573
+   },
+   "단일 응답": {
+    "fp_conditions": 0,
+    "n_neg": 12,
+    "fp_trials": 0,
+    "neg_trials": 10800,
+    "miss_conditions": 5,
+    "n_pos": 5,
+    "miss_trials": 4500,
+    "pos_trials": 4500,
+    "detected_trials": 0,
+    "undetermined_trials": 0,
+    "label_correct_trials": 3600,
+    "confident_errors": 4500
+   }
+  },
+  "0.05": {
+   "FAILSAFE": {
+    "fp_conditions": 0,
+    "n_neg": 12,
+    "fp_trials": 0,
+    "neg_trials": 10800,
+    "miss_conditions": 2,
+    "n_pos": 5,
+    "miss_trials": 2,
+    "pos_trials": 4500,
+    "detected_trials": 3158,
+    "undetermined_trials": 5538,
+    "label_correct_trials": 5416,
+    "confident_errors": 2
+   },
+   "v2 규칙": {
+    "fp_conditions": 0,
+    "n_neg": 12,
+    "fp_trials": 0,
+    "neg_trials": 10800,
+    "miss_conditions": 5,
+    "n_pos": 5,
+    "miss_trials": 75,
+    "pos_trials": 4500,
+    "detected_trials": 2661,
+    "undetermined_trials": 10465,
+    "label_correct_trials": 299,
+    "confident_errors": 75
+   },
+   "복구만": {
+    "fp_conditions": 12,
+    "n_neg": 12,
+    "fp_trials": 2517,
+    "neg_trials": 10800,
+    "miss_conditions": 5,
+    "n_pos": 5,
+    "miss_trials": 266,
+    "pos_trials": 4500,
+    "detected_trials": 4234,
+    "undetermined_trials": 0,
+    "label_correct_trials": 1212,
+    "confident_errors": 2783
+   },
+   "단순 재시도": {
+    "fp_conditions": 12,
+    "n_neg": 12,
+    "fp_trials": 3374,
+    "neg_trials": 10800,
+    "miss_conditions": 5,
+    "n_pos": 5,
+    "miss_trials": 246,
+    "pos_trials": 4500,
+    "detected_trials": 4254,
+    "undetermined_trials": 0,
+    "label_correct_trials": 350,
+    "confident_errors": 3620
+   },
+   "단일 응답": {
+    "fp_conditions": 0,
+    "n_neg": 12,
+    "fp_trials": 0,
+    "neg_trials": 10800,
+    "miss_conditions": 5,
+    "n_pos": 5,
+    "miss_trials": 4500,
+    "pos_trials": 4500,
+    "detected_trials": 0,
+    "undetermined_trials": 0,
+    "label_correct_trials": 3600,
+    "confident_errors": 4500
+   }
+  }
+ },
+ "decision_rule": {
+  "per_q": {
+   "0.01": true,
+   "0.05": true
+  },
+  "superiority_confirmed": true
+ },
+ "elapsed_sec": 234.2
+}

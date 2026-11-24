@@ -1,0 +1,2739 @@
+{
+ "per_condition": {
+  "replay": {
+   "0.0": {
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     }
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "no_block": 29,
+       "undetermined": 1
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 1,
+      "label_ok": 29
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 0
+     }
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 26,
+       "normal_policy": 4
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 26,
+      "label_ok": 4
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 26,
+       "normal_policy": 4
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 26,
+      "label_ok": 4
+     }
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 30,
+      "label_ok": 0
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 30,
+      "label_ok": 0
+     }
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 0,
+      "und": 30,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 0,
+      "und": 30,
+      "label_ok": null
+     }
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 30,
+      "label_ok": 0
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 30,
+      "label_ok": 0
+     }
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 0
+     }
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     }
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 0
+     }
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 0
+     }
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     }
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     }
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 0
+     }
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     }
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 0
+     }
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 0
+     }
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "no_block": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 30
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 0,
+      "label_ok": 0
+     }
+    }
+   },
+   "0.01": {
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 849,
+       "undetermined": 51
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 849,
+      "und": 51,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 843,
+       "undetermined": 54,
+       "normal_policy": 2,
+       "no_block": 1
+      },
+      "fp": 0,
+      "miss": 3,
+      "hit": 843,
+      "und": 54,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 843,
+       "undetermined": 54,
+       "normal_policy": 3
+      },
+      "fp": 0,
+      "miss": 3,
+      "hit": 843,
+      "und": 54,
+      "label_ok": null
+     }
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "no_block": 769,
+       "undetermined": 95,
+       "normal_policy": 36
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 95,
+      "label_ok": 769
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "no_block": 661,
+       "undetermined": 180,
+       "normal_policy": 59
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 180,
+      "label_ok": 661
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 720,
+       "undetermined": 180
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 180,
+      "label_ok": 0
+     }
+    },
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 751,
+       "undetermined": 85,
+       "no_block": 64
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 85,
+      "label_ok": 751
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 882,
+       "no_block": 9,
+       "normal_policy": 9
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 882,
+      "label_ok": 9
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 882,
+       "normal_policy": 18
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 882,
+      "label_ok": 18
+     }
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 762,
+       "no_block": 44,
+       "undetermined": 94
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 94,
+      "label_ok": 762
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 892,
+       "no_block": 5,
+       "normal_policy": 3
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 892,
+      "label_ok": 3
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 892,
+       "normal_policy": 8
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 892,
+      "label_ok": 8
+     }
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "no_block": 738,
+       "undetermined": 128,
+       "normal_policy": 34
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 128,
+      "label_ok": 738
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "no_block": 649,
+       "undetermined": 199,
+       "normal_policy": 52
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 199,
+      "label_ok": 649
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 701,
+       "undetermined": 199
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 199,
+      "label_ok": 0
+     }
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 847,
+       "undetermined": 53
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 847,
+      "und": 53,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 843,
+       "undetermined": 57
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 843,
+      "und": 57,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 843,
+       "undetermined": 57
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 843,
+      "und": 57,
+      "label_ok": null
+     }
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 837,
+       "undetermined": 63
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 837,
+      "und": 63,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 892,
+       "state_corruption": 8
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 8,
+      "und": 892,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 892,
+       "state_corruption": 8
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 8,
+      "und": 892,
+      "label_ok": null
+     }
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "no_block": 799,
+       "undetermined": 67,
+       "normal_policy": 34
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 67,
+      "label_ok": 799
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "no_block": 634,
+       "undetermined": 209,
+       "normal_policy": 57
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 209,
+      "label_ok": 634
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 691,
+       "undetermined": 209
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 209,
+      "label_ok": 0
+     }
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "no_block": 767,
+       "normal_policy": 40,
+       "undetermined": 93
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 93,
+      "label_ok": 767
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "no_block": 651,
+       "normal_policy": 45,
+       "undetermined": 204
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 204,
+      "label_ok": 651
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 696,
+       "undetermined": 204
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 204,
+      "label_ok": 0
+     }
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 801,
+       "undetermined": 77,
+       "no_block": 22
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 77,
+      "label_ok": 801
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 801,
+       "no_block": 5,
+       "normal_policy": 94
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 801,
+      "label_ok": 94
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 801,
+       "normal_policy": 99
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 801,
+      "label_ok": 99
+     }
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 850,
+       "undetermined": 50
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 850,
+      "und": 50,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 855,
+       "undetermined": 37,
+       "normal_policy": 3,
+       "no_block": 5
+      },
+      "fp": 0,
+      "miss": 8,
+      "hit": 855,
+      "und": 37,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 855,
+       "undetermined": 37,
+       "normal_policy": 8
+      },
+      "fp": 0,
+      "miss": 8,
+      "hit": 855,
+      "und": 37,
+      "label_ok": null
+     }
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 792,
+       "no_block": 24,
+       "undetermined": 84
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 84,
+      "label_ok": 792
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 238,
+       "normal_policy": 656,
+       "no_block": 6
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 238,
+      "label_ok": 656
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 238,
+       "normal_policy": 662
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 238,
+      "label_ok": 662
+     }
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "undetermined": 120,
+       "no_block": 748,
+       "normal_policy": 32
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 120,
+      "label_ok": 748
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 224,
+       "no_block": 616,
+       "normal_policy": 60
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 224,
+      "label_ok": 616
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 224,
+       "normal_policy": 676
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 224,
+      "label_ok": 0
+     }
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "no_block": 819,
+       "normal_policy": 28,
+       "undetermined": 53
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 53,
+      "label_ok": 819
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "no_block": 637,
+       "undetermined": 220,
+       "normal_policy": 43
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 220,
+      "label_ok": 637
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 680,
+       "undetermined": 220
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 220,
+      "label_ok": 0
+     }
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 848,
+       "undetermined": 52
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 848,
+      "und": 52,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 849,
+       "undetermined": 43,
+       "normal_policy": 5,
+       "no_block": 3
+      },
+      "fp": 0,
+      "miss": 8,
+      "hit": 849,
+      "und": 43,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 849,
+       "undetermined": 43,
+       "normal_policy": 8
+      },
+      "fp": 0,
+      "miss": 8,
+      "hit": 849,
+      "und": 43,
+      "label_ok": null
+     }
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "no_block": 816,
+       "normal_policy": 35,
+       "undetermined": 49
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 49,
+      "label_ok": 816
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 200,
+       "no_block": 634,
+       "normal_policy": 66
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 200,
+      "label_ok": 634
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 200,
+       "normal_policy": 700
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 200,
+      "label_ok": 0
+     }
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "undetermined": 89,
+       "no_block": 782,
+       "normal_policy": 29
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 89,
+      "label_ok": 782
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "no_block": 624,
+       "undetermined": 220,
+       "normal_policy": 56
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 220,
+      "label_ok": 624
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 680,
+       "undetermined": 220
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 220,
+      "label_ok": 0
+     }
+    }
+   },
+   "0.05": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 374,
+       "undetermined": 389,
+       "no_block": 137
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 389,
+      "label_ok": 374
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 879,
+       "normal_policy": 11,
+       "no_block": 10
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 879,
+      "label_ok": 11
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 879,
+       "normal_policy": 21
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 879,
+      "label_ok": 21
+     }
+    },
+    "authelia-fs1-4.39.28": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 640,
+       "undetermined": 260
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 640,
+      "und": 260,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 661,
+       "undetermined": 237,
+       "normal_policy": 2
+      },
+      "fp": 0,
+      "miss": 2,
+      "hit": 661,
+      "und": 237,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 661,
+       "undetermined": 237,
+       "normal_policy": 2
+      },
+      "fp": 0,
+      "miss": 2,
+      "hit": 661,
+      "und": 237,
+      "label_ok": null
+     }
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 552,
+       "undetermined": 347,
+       "normal_policy": 1
+      },
+      "fp": 0,
+      "miss": 1,
+      "hit": 552,
+      "und": 347,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 862,
+       "state_corruption": 36,
+       "normal_policy": 1,
+       "no_block": 1
+      },
+      "fp": 0,
+      "miss": 2,
+      "hit": 36,
+      "und": 862,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 862,
+       "state_corruption": 36,
+       "normal_policy": 2
+      },
+      "fp": 0,
+      "miss": 2,
+      "hit": 36,
+      "und": 862,
+      "label_ok": null
+     }
+    },
+    "authelia-src-4.39.28": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "undetermined": 385,
+       "normal_policy": 387,
+       "no_block": 128
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 385,
+      "label_ok": 387
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 877,
+       "normal_policy": 16,
+       "no_block": 7
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 877,
+      "label_ok": 16
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 877,
+       "normal_policy": 23
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 877,
+      "label_ok": 23
+     }
+    },
+    "authentik-2024.10.5": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 76,
+       "undetermined": 409,
+       "no_block": 415
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 409,
+      "label_ok": 415
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 658,
+       "no_block": 171,
+       "normal_policy": 71
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 658,
+      "label_ok": 171
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 658,
+       "normal_policy": 242
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 658,
+      "label_ok": 0
+     }
+    },
+    "authentik-fs2-2024.10.5": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 649,
+       "undetermined": 251
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 649,
+      "und": 251,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 647,
+       "undetermined": 222,
+       "normal_policy": 24,
+       "no_block": 7
+      },
+      "fp": 0,
+      "miss": 31,
+      "hit": 647,
+      "und": 222,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 647,
+       "undetermined": 222,
+       "normal_policy": 31
+      },
+      "fp": 0,
+      "miss": 31,
+      "hit": 647,
+      "und": 222,
+      "label_ok": null
+     }
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "undetermined": 401,
+       "no_block": 409,
+       "normal_policy": 90
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 401,
+      "label_ok": 409
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 71,
+       "undetermined": 656,
+       "no_block": 173
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 656,
+      "label_ok": 173
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 244,
+       "undetermined": 656
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 656,
+      "label_ok": 0
+     }
+    },
+    "kanidm-1.12.0": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "no_block": 440,
+       "undetermined": 375,
+       "normal_policy": 85
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 375,
+      "label_ok": 440
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 75,
+       "undetermined": 680,
+       "no_block": 145
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 680,
+      "label_ok": 145
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 220,
+       "undetermined": 680
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 680,
+      "label_ok": 0
+     }
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 457,
+       "undetermined": 357,
+       "no_block": 86
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 357,
+      "label_ok": 457
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 702,
+       "normal_policy": 189,
+       "no_block": 9
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 702,
+      "label_ok": 189
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 702,
+       "normal_policy": 198
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 702,
+      "label_ok": 198
+     }
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 657,
+       "undetermined": 243
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 657,
+      "und": 243,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 665,
+       "undetermined": 216,
+       "normal_policy": 13,
+       "no_block": 6
+      },
+      "fp": 0,
+      "miss": 19,
+      "hit": 665,
+      "und": 216,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 665,
+       "undetermined": 216,
+       "normal_policy": 19
+      },
+      "fp": 0,
+      "miss": 19,
+      "hit": 665,
+      "und": 216,
+      "label_ok": null
+     }
+    },
+    "keycloak-26.0.7-bf_off": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "no_block": 486,
+       "undetermined": 309,
+       "normal_policy": 105
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 309,
+      "label_ok": 486
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "no_block": 163,
+       "undetermined": 665,
+       "normal_policy": 72
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 665,
+      "label_ok": 163
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 235,
+       "undetermined": 665
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 665,
+      "label_ok": 0
+     }
+    },
+    "keycloak-26.0.7-bf_perm": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "normal_policy": 490,
+       "no_block": 67,
+       "undetermined": 343
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 343,
+      "label_ok": 490
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 843,
+       "no_block": 14,
+       "normal_policy": 43
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 843,
+      "label_ok": 43
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 843,
+       "normal_policy": 57
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 843,
+      "label_ok": 57
+     }
+    },
+    "vaultwarden-1.35.4-synced": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "undetermined": 247,
+       "no_block": 548,
+       "normal_policy": 105
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 247,
+      "label_ok": 548
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 680,
+       "no_block": 152,
+       "normal_policy": 68
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 680,
+      "label_ok": 152
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 680,
+       "normal_policy": 220
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 680,
+      "label_ok": 0
+     }
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "undetermined": 395,
+       "no_block": 410,
+       "normal_policy": 95
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 395,
+      "label_ok": 410
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 683,
+       "no_block": 138,
+       "normal_policy": 79
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 683,
+      "label_ok": 138
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 683,
+       "normal_policy": 217
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 683,
+      "label_ok": 0
+     }
+    },
+    "vaultwarden-mc-1.35.5": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 660,
+       "undetermined": 239,
+       "no_block": 1
+      },
+      "fp": 0,
+      "miss": 1,
+      "hit": 660,
+      "und": 239,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 652,
+       "undetermined": 227,
+       "normal_policy": 14,
+       "no_block": 7
+      },
+      "fp": 0,
+      "miss": 21,
+      "hit": 652,
+      "und": 227,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "state_corruption": 652,
+       "undetermined": 227,
+       "normal_policy": 21
+      },
+      "fp": 0,
+      "miss": 21,
+      "hit": 652,
+      "und": 227,
+      "label_ok": null
+     }
+    },
+    "zitadel-4.20.1": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "undetermined": 349,
+       "no_block": 457,
+       "normal_policy": 94
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 349,
+      "label_ok": 457
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 685,
+       "no_block": 146,
+       "normal_policy": 69
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 685,
+      "label_ok": 146
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 685,
+       "normal_policy": 215
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 685,
+      "label_ok": 0
+     }
+    },
+    "vaultwarden-1.35.5-synced": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 900,
+      "dist": {
+       "no_block": 543,
+       "undetermined": 239,
+       "normal_policy": 118
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 239,
+      "label_ok": 543
+     },
+     "R4 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 693,
+       "no_block": 135,
+       "normal_policy": 72
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 693,
+      "label_ok": 135
+     },
+     "v2 규칙": {
+      "n": 900,
+      "dist": {
+       "undetermined": 693,
+       "normal_policy": 207
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 693,
+      "label_ok": 0
+     }
+    }
+   }
+  },
+  "fault": {
+   "0.01": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "undetermined": 4,
+       "normal_policy": 25,
+       "no_block": 1
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 4,
+      "label_ok": 25
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 30,
+      "label_ok": 0
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 30,
+      "label_ok": 0
+     }
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "undetermined": 3,
+       "state_corruption": 27
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 27,
+      "und": 3,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 0,
+      "und": 30,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 0,
+      "und": 30,
+      "label_ok": null
+     }
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "no_block": 23,
+       "normal_policy": 2,
+       "undetermined": 5
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 5,
+      "label_ok": 23
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "no_block": 23,
+       "undetermined": 5,
+       "normal_policy": 2
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 5,
+      "label_ok": 23
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 25,
+       "undetermined": 5
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 5,
+      "label_ok": 0
+     }
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 27,
+       "undetermined": 3
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 3,
+      "label_ok": 27
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 20,
+       "undetermined": 10
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 10,
+      "label_ok": 20
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 20,
+       "undetermined": 10
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 10,
+      "label_ok": 20
+     }
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 30,
+      "und": 0,
+      "label_ok": null
+     }
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "no_block": 26,
+       "undetermined": 4
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 4,
+      "label_ok": 26
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "no_block": 19,
+       "undetermined": 7,
+       "normal_policy": 4
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 7,
+      "label_ok": 19
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 23,
+       "undetermined": 7
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 7,
+      "label_ok": 0
+     }
+    }
+   },
+   "0.05": {
+    "authelia-4.39.28": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 13,
+       "undetermined": 16,
+       "no_block": 1
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 16,
+      "label_ok": 13
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 30,
+      "label_ok": 0
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 30,
+      "label_ok": 0
+     }
+    },
+    "authelia-mc-4.39.28": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 26,
+       "undetermined": 4
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 26,
+      "und": 4,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 0,
+      "und": 30,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 30
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 0,
+      "und": 30,
+      "label_ok": null
+     }
+    },
+    "gitea-1.24.0": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "no_block": 16,
+       "undetermined": 14
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 14,
+      "label_ok": 16
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 24,
+       "no_block": 5,
+       "normal_policy": 1
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 24,
+      "label_ok": 5
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 24,
+       "normal_policy": 6
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 24,
+      "label_ok": 0
+     }
+    },
+    "keycloak-26.0.7-bf_on": {
+     "truth": "normal_policy",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 21,
+       "undetermined": 7,
+       "no_block": 2
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 7,
+      "label_ok": 21
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 10,
+       "undetermined": 20
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 20,
+      "label_ok": 10
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "normal_policy": 10,
+       "undetermined": 20
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 20,
+      "label_ok": 10
+     }
+    },
+    "vaultwarden-1.35.4": {
+     "truth": "state_corruption",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 25,
+       "undetermined": 5
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 25,
+      "und": 5,
+      "label_ok": null
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 25,
+       "undetermined": 5
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 25,
+      "und": 5,
+      "label_ok": null
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "state_corruption": 25,
+       "undetermined": 5
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": 25,
+      "und": 5,
+      "label_ok": null
+     }
+    },
+    "vaultwarden-1.35.5": {
+     "truth": "no_block",
+     "FAILSAFE": {
+      "n": 30,
+      "dist": {
+       "no_block": 16,
+       "normal_policy": 2,
+       "undetermined": 12
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 12,
+      "label_ok": 16
+     },
+     "R4 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 22,
+       "no_block": 6,
+       "normal_policy": 2
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 22,
+      "label_ok": 6
+     },
+     "v2 규칙": {
+      "n": 30,
+      "dist": {
+       "undetermined": 22,
+       "normal_policy": 8
+      },
+      "fp": 0,
+      "miss": 0,
+      "hit": null,
+      "und": 22,
+      "label_ok": 0
+     }
+    }
+   }
+  }
+ },
+ "totals": {
+  "replay": {
+   "0.0": {
+    "FAILSAFE": {
+     "fp": 0,
+     "neg_n": 360,
+     "miss": 0,
+     "pos_n": 150,
+     "hit": 150,
+     "und": 1,
+     "label_ok": 359,
+     "pos_cond_detected_all": 5,
+     "pos_cond_detected_majority": 5,
+     "neg_cond_label_majority": 12,
+     "n_pos_cond": 5,
+     "n_neg_cond": 12,
+     "conf_err": 0
+    },
+    "R4 규칙": {
+     "fp": 0,
+     "neg_n": 360,
+     "miss": 0,
+     "pos_n": 150,
+     "hit": 120,
+     "und": 116,
+     "label_ok": 274,
+     "pos_cond_detected_all": 4,
+     "pos_cond_detected_majority": 4,
+     "neg_cond_label_majority": 9,
+     "n_pos_cond": 5,
+     "n_neg_cond": 12,
+     "conf_err": 0
+    },
+    "v2 규칙": {
+     "fp": 0,
+     "neg_n": 360,
+     "miss": 0,
+     "pos_n": 150,
+     "hit": 120,
+     "und": 116,
+     "label_ok": 34,
+     "pos_cond_detected_all": 4,
+     "pos_cond_detected_majority": 4,
+     "neg_cond_label_majority": 1,
+     "n_pos_cond": 5,
+     "n_neg_cond": 12,
+     "conf_err": 0
+    }
+   },
+   "0.01": {
+    "FAILSAFE": {
+     "fp": 0,
+     "neg_n": 10800,
+     "miss": 0,
+     "pos_n": 4500,
+     "hit": 4231,
+     "und": 1303,
+     "label_ok": 9344,
+     "pos_cond_detected_all": 0,
+     "pos_cond_detected_majority": 5,
+     "neg_cond_label_majority": 12,
+     "n_pos_cond": 5,
+     "n_neg_cond": 12,
+     "conf_err": 0
+    },
+    "R4 규칙": {
+     "fp": 0,
+     "neg_n": 10800,
+     "miss": 19,
+     "pos_n": 4500,
+     "hit": 3398,
+     "und": 5552,
+     "label_ok": 5868,
+     "pos_cond_detected_all": 0,
+     "pos_cond_detected_majority": 4,
+     "neg_cond_label_majority": 9,
+     "n_pos_cond": 5,
+     "n_neg_cond": 12,
+     "conf_err": 19
+    },
+    "v2 규칙": {
+     "fp": 0,
+     "neg_n": 10800,
+     "miss": 19,
+     "pos_n": 4500,
+     "hit": 3398,
+     "und": 5552,
+     "label_ok": 787,
+     "pos_cond_detected_all": 0,
+     "pos_cond_detected_majority": 4,
+     "neg_cond_label_majority": 1,
+     "n_pos_cond": 5,
+     "n_neg_cond": 12,
+     "conf_err": 19
+    }
+   },
+   "0.05": {
+    "FAILSAFE": {
+     "fp": 0,
+     "neg_n": 10800,
+     "miss": 2,
+     "pos_n": 4500,
+     "hit": 3158,
+     "und": 5538,
+     "label_ok": 5416,
+     "pos_cond_detected_all": 0,
+     "pos_cond_detected_majority": 5,
+     "neg_cond_label_majority": 6,
+     "n_pos_cond": 5,
+     "n_neg_cond": 12,
+     "conf_err": 2
+    },
+    "R4 규칙": {
+     "fp": 0,
+     "neg_n": 10800,
+     "miss": 75,
+     "pos_n": 4500,
+     "hit": 2661,
+     "und": 10465,
+     "label_ok": 1482,
+     "pos_cond_detected_all": 0,
+     "pos_cond_detected_majority": 4,
+     "neg_cond_label_majority": 0,
+     "n_pos_cond": 5,
+     "n_neg_cond": 12,
+     "conf_err": 75
+    },
+    "v2 규칙": {
+     "fp": 0,
+     "neg_n": 10800,
+     "miss": 75,
+     "pos_n": 4500,
+     "hit": 2661,
+     "und": 10465,
+     "label_ok": 299,
+     "pos_cond_detected_all": 0,
+     "pos_cond_detected_majority": 4,
+     "neg_cond_label_majority": 0,
+     "n_pos_cond": 5,
+     "n_neg_cond": 12,
+     "conf_err": 75
+    }
+   }
+  },
+  "fault": {
+   "0.01": {
+    "FAILSAFE": {
+     "fp": 0,
+     "neg_n": 120,
+     "miss": 0,
+     "pos_n": 60,
+     "hit": 57,
+     "und": 19,
+     "label_ok": 101,
+     "pos_cond_detected_all": 1,
+     "pos_cond_detected_majority": 2,
+     "neg_cond_label_majority": 4,
+     "n_pos_cond": 2,
+     "n_neg_cond": 4,
+     "conf_err": 0
+    },
+    "R4 규칙": {
+     "fp": 0,
+     "neg_n": 120,
+     "miss": 0,
+     "pos_n": 60,
+     "hit": 30,
+     "und": 82,
+     "label_ok": 62,
+     "pos_cond_detected_all": 1,
+     "pos_cond_detected_majority": 1,
+     "neg_cond_label_majority": 3,
+     "n_pos_cond": 2,
+     "n_neg_cond": 4,
+     "conf_err": 0
+    },
+    "v2 규칙": {
+     "fp": 0,
+     "neg_n": 120,
+     "miss": 0,
+     "pos_n": 60,
+     "hit": 30,
+     "und": 82,
+     "label_ok": 20,
+     "pos_cond_detected_all": 1,
+     "pos_cond_detected_majority": 1,
+     "neg_cond_label_majority": 1,
+     "n_pos_cond": 2,
+     "n_neg_cond": 4,
+     "conf_err": 0
+    }
+   },
+   "0.05": {
+    "FAILSAFE": {
+     "fp": 0,
+     "neg_n": 120,
+     "miss": 0,
+     "pos_n": 60,
+     "hit": 51,
+     "und": 58,
+     "label_ok": 66,
+     "pos_cond_detected_all": 0,
+     "pos_cond_detected_majority": 2,
+     "neg_cond_label_majority": 3,
+     "n_pos_cond": 2,
+     "n_neg_cond": 4,
+     "conf_err": 0
+    },
+    "R4 규칙": {
+     "fp": 0,
+     "neg_n": 120,
+     "miss": 0,
+     "pos_n": 60,
+     "hit": 25,
+     "und": 131,
+     "label_ok": 21,
+     "pos_cond_detected_all": 0,
+     "pos_cond_detected_majority": 1,
+     "neg_cond_label_majority": 0,
+     "n_pos_cond": 2,
+     "n_neg_cond": 4,
+     "conf_err": 0
+    },
+    "v2 규칙": {
+     "fp": 0,
+     "neg_n": 120,
+     "miss": 0,
+     "pos_n": 60,
+     "hit": 25,
+     "und": 131,
+     "label_ok": 10,
+     "pos_cond_detected_all": 0,
+     "pos_cond_detected_majority": 1,
+     "neg_cond_label_majority": 0,
+     "n_pos_cond": 2,
+     "n_neg_cond": 4,
+     "conf_err": 0
+    }
+   }
+  }
+ }
+}

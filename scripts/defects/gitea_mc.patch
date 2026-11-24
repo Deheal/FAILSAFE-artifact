@@ -1,0 +1,20 @@
+--- gitea-src/routers/web/auth/webauthn.go	2026-11-14 04:32:03.457194311 +0900
++++ gitea-mc/routers/web/auth/webauthn.go	2026-11-14 04:32:02.544996778 +0900
+@@ -237,6 +237,17 @@
+ 
+ 	// Validate the parsed response.
+ 	webAuthnUser := wa.NewWebAuthnUser(ctx, user, parsedResponse.Response.AuthenticatorData.Flags)
++	// FAILSAFE mutation M_C (docs/round4_plan.md 3): persist the UNVERIFIED signCount before validation.
++	// webAuthnUser above was built from the stored credentials before this write.
++	if mcCred, mcErr := auth.GetWebAuthnCredentialByCredID(ctx, user.ID, parsedResponse.RawID); mcErr == nil {
++		if n := parsedResponse.Response.AuthenticatorData.Counter; n > mcCred.SignCount {
++			mcCred.SignCount = n
++			if mcErr = mcCred.UpdateSignCount(ctx); mcErr != nil {
++				log.Error("M_C: failed to persist sign count: %v", mcErr)
++			}
++		}
++	}
++
+ 	cred, err := wa.WebAuthn.ValidateLogin(webAuthnUser, *sessionData, parsedResponse)
+ 	if err != nil {
+ 		// Failed authentication attempt.

@@ -1,0 +1,657 @@
+{
+ "per_condition": {
+  "HK-C": {
+   "code": "hk-X01",
+   "truth": "state_corruption",
+   "n": 30,
+   "block_cause": {
+    "state_corruption": 30
+   },
+   "defect_presence": {
+    "state_corruption": 30
+   },
+   "FAILSAFE": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "R4 규칙": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "v2 규칙": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "복구만": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "단순 재시도": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "단일 응답": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 30,
+    "hit": 0,
+    "und": 0,
+    "label_ok": null
+   }
+  },
+  "HK-F": {
+   "code": "hk-X02",
+   "truth": "no_block",
+   "n": 30,
+   "block_cause": {
+    "no_block": 30
+   },
+   "defect_presence": {
+    "undetermined": 30
+   },
+   "FAILSAFE": {
+    "dist": {
+     "no_block": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "R4 규칙": {
+    "dist": {
+     "no_block": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "v2 규칙": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "복구만": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단순 재시도": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단일 응답": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   }
+  },
+  "HK-S": {
+   "code": "hk-X05",
+   "truth": "no_block",
+   "n": 30,
+   "block_cause": {
+    "no_block": 30
+   },
+   "defect_presence": {
+    "undetermined": 30
+   },
+   "FAILSAFE": {
+    "dist": {
+     "no_block": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "R4 규칙": {
+    "dist": {
+     "no_block": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "v2 규칙": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "복구만": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단순 재시도": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단일 응답": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   }
+  },
+  "HK-orig": {
+   "code": "hk-X09",
+   "truth": "no_block",
+   "n": 30,
+   "block_cause": {
+    "no_block": 30
+   },
+   "defect_presence": {
+    "undetermined": 30
+   },
+   "FAILSAFE": {
+    "dist": {
+     "no_block": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "R4 규칙": {
+    "dist": {
+     "no_block": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "v2 규칙": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "복구만": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단순 재시도": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단일 응답": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   }
+  },
+  "PI-lockT": {
+   "code": "pi-X03",
+   "truth": "normal_policy",
+   "n": 30,
+   "block_cause": {
+    "no_block": 29,
+    "undetermined(defect_probe_missing)": 1
+   },
+   "defect_presence": {
+    "undetermined": 30
+   },
+   "FAILSAFE": {
+    "dist": {
+     "no_block": 29,
+     "undetermined": 1
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 1,
+    "label_ok": 0
+   },
+   "R4 규칙": {
+    "dist": {
+     "no_block": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "v2 규칙": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "복구만": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "단순 재시도": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "단일 응답": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   }
+  },
+  "PI-orig": {
+   "code": "pi-X04",
+   "truth": "no_block",
+   "n": 30,
+   "block_cause": {
+    "no_block": 29,
+    "undetermined(defect_probe_missing)": 1
+   },
+   "defect_presence": {
+    "undetermined": 30
+   },
+   "FAILSAFE": {
+    "dist": {
+     "no_block": 29,
+     "undetermined": 1
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 1,
+    "label_ok": 29
+   },
+   "R4 규칙": {
+    "dist": {
+     "no_block": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "v2 규칙": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "복구만": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단순 재시도": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단일 응답": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   }
+  },
+  "PI-S": {
+   "code": "pi-X06",
+   "truth": "no_block",
+   "n": 30,
+   "block_cause": {
+    "no_block": 29,
+    "undetermined(defect_probe_missing)": 1
+   },
+   "defect_presence": {
+    "undetermined": 30
+   },
+   "FAILSAFE": {
+    "dist": {
+     "no_block": 29,
+     "undetermined": 1
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 1,
+    "label_ok": 29
+   },
+   "R4 규칙": {
+    "dist": {
+     "no_block": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "v2 규칙": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "복구만": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단순 재시도": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "단일 응답": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   }
+  },
+  "PI-C": {
+   "code": "pi-X07",
+   "truth": "state_corruption",
+   "n": 30,
+   "block_cause": {
+    "state_corruption": 30
+   },
+   "defect_presence": {
+    "state_corruption": 30
+   },
+   "FAILSAFE": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "R4 규칙": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "v2 규칙": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "복구만": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "단순 재시도": {
+    "dist": {
+     "state_corruption": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": 30,
+    "und": 0,
+    "label_ok": null
+   },
+   "단일 응답": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 30,
+    "hit": 0,
+    "und": 0,
+    "label_ok": null
+   }
+  },
+  "PI-lockP": {
+   "code": "pi-X08",
+   "truth": "normal_policy",
+   "n": 30,
+   "block_cause": {
+    "no_block": 29,
+    "undetermined(defect_probe_missing)": 1
+   },
+   "defect_presence": {
+    "undetermined": 30
+   },
+   "FAILSAFE": {
+    "dist": {
+     "no_block": 29,
+     "undetermined": 1
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 1,
+    "label_ok": 0
+   },
+   "R4 규칙": {
+    "dist": {
+     "no_block": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 0
+   },
+   "v2 규칙": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "복구만": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "단순 재시도": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   },
+   "단일 응답": {
+    "dist": {
+     "normal_policy": 30
+    },
+    "fp": 0,
+    "miss": 0,
+    "hit": null,
+    "und": 0,
+    "label_ok": 30
+   }
+  }
+ },
+ "criteria": {
+  "a_detect_majority": true,
+  "b_no_false_corruption": true,
+  "c_no_confident_miss": true,
+  "passed": true
+ }
+}

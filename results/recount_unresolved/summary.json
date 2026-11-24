@@ -1,0 +1,237 @@
+{
+ "0.0": {
+  "authelia-4.39.28": {
+   "unresolved_block": 30
+  },
+  "authelia-fs1-4.39.28": {
+   "state_corruption": 30
+  },
+  "authelia-mc-4.39.28": {
+   "state_corruption": 30
+  },
+  "authelia-src-4.39.28": {
+   "unresolved_block": 30
+  },
+  "authentik-2024.10.5": {
+   "no_block": 29,
+   "undetermined": 1
+  },
+  "authentik-fs2-2024.10.5": {
+   "state_corruption": 30
+  },
+  "gitea-1.24.0": {
+   "no_block": 30
+  },
+  "kanidm-1.12.0": {
+   "no_block": 30
+  },
+  "keycloak-26.0.7-bf_off": {
+   "no_block": 30
+  },
+  "keycloak-26.0.7-bf_on": {
+   "normal_policy": 30
+  },
+  "keycloak-26.0.7-bf_perm": {
+   "normal_policy": 30
+  },
+  "vaultwarden-1.35.4": {
+   "state_corruption": 30
+  },
+  "vaultwarden-1.35.4-synced": {
+   "no_block": 30
+  },
+  "vaultwarden-1.35.5": {
+   "no_block": 30
+  },
+  "vaultwarden-1.35.5-synced": {
+   "no_block": 30
+  },
+  "vaultwarden-mc-1.35.5": {
+   "state_corruption": 30
+  },
+  "zitadel-4.20.1": {
+   "no_block": 30
+  }
+ },
+ "0.01": {
+  "authelia-4.39.28": {
+   "unresolved_block": 749,
+   "undetermined": 85,
+   "no_block": 64,
+   "normal_policy": 2
+  },
+  "authelia-fs1-4.39.28": {
+   "state_corruption": 847,
+   "undetermined": 53
+  },
+  "authelia-mc-4.39.28": {
+   "state_corruption": 837,
+   "undetermined": 63
+  },
+  "authelia-src-4.39.28": {
+   "unresolved_block": 762,
+   "no_block": 44,
+   "undetermined": 94
+  },
+  "authentik-2024.10.5": {
+   "no_block": 738,
+   "undetermined": 128,
+   "normal_policy": 33,
+   "unresolved_block": 1
+  },
+  "authentik-fs2-2024.10.5": {
+   "state_corruption": 849,
+   "undetermined": 51
+  },
+  "gitea-1.24.0": {
+   "no_block": 769,
+   "undetermined": 95,
+   "normal_policy": 35,
+   "unresolved_block": 1
+  },
+  "kanidm-1.12.0": {
+   "no_block": 767,
+   "normal_policy": 40,
+   "undetermined": 93
+  },
+  "keycloak-26.0.7-bf_off": {
+   "no_block": 799,
+   "undetermined": 67,
+   "normal_policy": 34
+  },
+  "keycloak-26.0.7-bf_on": {
+   "normal_policy": 792,
+   "no_block": 24,
+   "undetermined": 84
+  },
+  "keycloak-26.0.7-bf_perm": {
+   "normal_policy": 801,
+   "undetermined": 77,
+   "no_block": 22
+  },
+  "vaultwarden-1.35.4": {
+   "state_corruption": 850,
+   "undetermined": 50
+  },
+  "vaultwarden-1.35.4-synced": {
+   "no_block": 819,
+   "normal_policy": 27,
+   "undetermined": 53,
+   "unresolved_block": 1
+  },
+  "vaultwarden-1.35.5": {
+   "undetermined": 120,
+   "no_block": 748,
+   "normal_policy": 32
+  },
+  "vaultwarden-1.35.5-synced": {
+   "no_block": 816,
+   "normal_policy": 35,
+   "undetermined": 49
+  },
+  "vaultwarden-mc-1.35.5": {
+   "state_corruption": 848,
+   "undetermined": 52
+  },
+  "zitadel-4.20.1": {
+   "undetermined": 89,
+   "no_block": 782,
+   "normal_policy": 28,
+   "unresolved_block": 1
+  }
+ },
+ "0.05": {
+  "authelia-4.39.28": {
+   "unresolved_block": 342,
+   "undetermined": 389,
+   "no_block": 137,
+   "normal_policy": 32
+  },
+  "authelia-fs1-4.39.28": {
+   "state_corruption": 640,
+   "undetermined": 260
+  },
+  "authelia-mc-4.39.28": {
+   "state_corruption": 552,
+   "undetermined": 347,
+   "unresolved_block": 1
+  },
+  "authelia-src-4.39.28": {
+   "undetermined": 385,
+   "unresolved_block": 359,
+   "no_block": 128,
+   "normal_policy": 28
+  },
+  "authentik-2024.10.5": {
+   "normal_policy": 71,
+   "undetermined": 409,
+   "no_block": 415,
+   "unresolved_block": 5
+  },
+  "authentik-fs2-2024.10.5": {
+   "state_corruption": 649,
+   "undetermined": 251
+  },
+  "gitea-1.24.0": {
+   "undetermined": 401,
+   "no_block": 409,
+   "normal_policy": 90
+  },
+  "kanidm-1.12.0": {
+   "no_block": 440,
+   "undetermined": 375,
+   "normal_policy": 85
+  },
+  "keycloak-26.0.7-bf_off": {
+   "no_block": 486,
+   "undetermined": 309,
+   "normal_policy": 101,
+   "unresolved_block": 4
+  },
+  "keycloak-26.0.7-bf_on": {
+   "normal_policy": 455,
+   "undetermined": 357,
+   "no_block": 86,
+   "unresolved_block": 2
+  },
+  "keycloak-26.0.7-bf_perm": {
+   "normal_policy": 488,
+   "no_block": 67,
+   "undetermined": 343,
+   "unresolved_block": 2
+  },
+  "vaultwarden-1.35.4": {
+   "state_corruption": 657,
+   "undetermined": 243
+  },
+  "vaultwarden-1.35.4-synced": {
+   "undetermined": 247,
+   "no_block": 548,
+   "normal_policy": 99,
+   "unresolved_block": 6
+  },
+  "vaultwarden-1.35.5": {
+   "undetermined": 395,
+   "no_block": 410,
+   "normal_policy": 92,
+   "unresolved_block": 3
+  },
+  "vaultwarden-1.35.5-synced": {
+   "no_block": 543,
+   "undetermined": 239,
+   "normal_policy": 114,
+   "unresolved_block": 4
+  },
+  "vaultwarden-mc-1.35.5": {
+   "state_corruption": 660,
+   "undetermined": 239,
+   "no_block": 1
+  },
+  "zitadel-4.20.1": {
+   "undetermined": 349,
+   "no_block": 457,
+   "normal_policy": 89,
+   "unresolved_block": 5
+  }
+ }
+}

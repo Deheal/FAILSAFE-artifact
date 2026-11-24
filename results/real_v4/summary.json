@@ -1,0 +1,3144 @@
+{
+ "params": {
+  "eps": 0.1,
+  "tau": 0.99,
+  "m": 2,
+  "per_probe_a1": true
+ },
+ "conditions": {
+  "authelia-mc-4.39.28": {
+   "n": 30,
+   "truth": "state_corruption",
+   "predicted": "state_corruption",
+   "block_cause": {
+    "state_corruption": 30
+   },
+   "correct": 30,
+   "false_corruption": 0,
+   "confident_miss": 0,
+   "undetermined": 0,
+   "matches_prediction": 30,
+   "q3_truth": "state_corruption",
+   "q3_predicted": "state_corruption",
+   "q3_observed": "state_corruption",
+   "defect_presence": {
+    "state_corruption": 30
+   },
+   "mutation": "M_C",
+   "library": "afs-src 설정 복사, 포트 9098, M_C 변이 빌드(build/authelia-mc)",
+   "baselines": {
+    "v2 규칙": {
+     "undetermined": 30
+    },
+    "복구만": {
+     "state_corruption": 30
+    },
+    "단순 재시도": {
+     "state_corruption": 30
+    },
+    "단일 응답": {
+     "normal_policy": 30
+    }
+   },
+   "symbol_patterns": {
+    "P_UV0": {
+     "A/A/A/A": 30
+    },
+    "P_BEBS": {
+     "R/A/A/A": 30
+    },
+    "P_SC_DEC": {
+     "A/A/R/R/R/R": 30
+    },
+    "P_WRONG_CRED": {
+     "R/R/R/A/A/A": 30
+    },
+    "P_TAMPER_K": {
+     "R/R/R/A/A/A": 30
+    },
+    "P_REVOKE": {
+     "R/A/A/A": 30
+    },
+    "P_CORRUPT": {
+     "R/A/A/A": 30
+    },
+    "P_CORRUPT_CTR": {
+     "R/R/R/R/R": 30
+    }
+   }
+  },
+  "kanidm-1.12.0": {
+   "n": 30,
+   "truth": "no_block",
+   "predicted": "no_block",
+   "block_cause": {
+    "no_block": 30
+   },
+   "correct": 30,
+   "false_corruption": 0,
+   "confident_miss": 0,
+   "undetermined": 0,
+   "matches_prediction": 30,
+   "q3_truth": "normal_policy",
+   "q3_predicted": "undetermined",
+   "q3_observed": "undetermined",
+   "defect_presence": {
+    "undetermined": 30
+   },
+   "mutation": "(없음/원본)",
+   "library": "kanidm 1.12.0, https://localhost:8443, 주 인증(webauthn-rs)",
+   "baselines": {
+    "v2 규칙": {
+     "normal_policy": 30
+    },
+    "복구만": {
+     "normal_policy": 30
+    },
+    "단순 재시도": {
+     "normal_policy": 30
+    },
+    "단일 응답": {
+     "normal_policy": 30
+    }
+   },
+   "symbol_patterns": {
+    "P_UV0": {
+     "A/A/A/A": 30
+    },
+    "P_BEBS": {
+     "B/A/A/A": 30
+    },
+    "P_SC_DEC": {
+     "A/A/B/A/A/A": 30
+    },
+    "P_WRONG_CRED": {
+     "B/B/B/A/A/A": 30
+    },
+    "P_TAMPER_K": {
+     "B/B/B/A/A/A": 30
+    },
+    "P_REVOKE": {
+     "B/A/A/A": 30
+    },
+    "P_CORRUPT": {
+     "B/A/A/A": 30
+    },
+    "P_CORRUPT_CTR": {
+     "B/A/A/A": 30
+    }
+   }
+  },
+  "vaultwarden-mc-1.35.5": {
+   "n": 30,
+   "truth": "state_corruption",
+   "predicted": "state_corruption",
+   "block_cause": {
+    "state_corruption": 30
+   },
+   "correct": 30,
+   "false_corruption": 0,
+   "confident_miss": 0,
+   "undetermined": 0,
+   "matches_prediction": 30,
+   "q3_truth": "state_corruption",
+   "q3_predicted": "state_corruption",
+   "q3_observed": "state_corruption",
+   "defect_presence": {
+    "state_corruption": 30
+   },
+   "mutation": "M_C",
+   "library": "1.35.5 소스 + M_C 변이 빌드(build/vw-mc), 포트 8006",
+   "baselines": {
+    "v2 규칙": {
+     "state_corruption": 30
+    },
+    "복구만": {
+     "state_corruption": 30
+    },
+    "단순 재시도": {
+     "state_corruption": 30
+    },
+    "단일 응답": {
+     "normal_policy": 30
+    }
+   },
+   "symbol_patterns": {
+    "P_UV0": {
+     "A/A/A/A": 30
+    },
+    "P_BEBS": {
+     "R/A/A/A": 30
+    },
+    "P_SC_DEC": {
+     "A/A/R/A/A/A": 30
+    },
+    "P_WRONG_CRED": {
+     "R/R/R/A/A/A": 30
+    },
+    "P_TAMPER_K": {
+     "R/R/R/A/A/A": 30
+    },
+    "P_REVOKE": {
+     "R/A/A/A": 30
+    },
+    "P_CORRUPT": {
+     "R/A/A/A": 30
+    },
+    "P_CORRUPT_CTR": {
+     "R/R/R/R/A": 30
+    }
+   }
+  },
+  "zitadel-4.20.1": {
+   "n": 30,
+   "truth": "no_block",
+   "predicted": "no_block",
+   "block_cause": {
+    "no_block": 30
+   },
+   "correct": 30,
+   "false_corruption": 0,
+   "confident_miss": 0,
+   "undetermined": 0,
+   "matches_prediction": 30,
+   "q3_truth": "normal_policy",
+   "q3_predicted": "undetermined",
+   "q3_observed": "undetermined",
+   "defect_presence": {
+    "undetermined": 30
+   },
+   "mutation": "(없음/원본)",
+   "library": "zitadel 4.20.1, http://localhost:8080, 세션 API v2(go-webauthn). 새 DB zitadel2.",
+   "baselines": {
+    "v2 규칙": {
+     "normal_policy": 30
+    },
+    "복구만": {
+     "normal_policy": 30
+    },
+    "단순 재시도": {
+     "normal_policy": 30
+    },
+    "단일 응답": {
+     "normal_policy": 30
+    }
+   },
+   "symbol_patterns": {
+    "P_UV0": {
+     "R/A/A/A": 30
+    },
+    "P_BEBS": {
+     "A/A/A/A": 30
+    },
+    "P_SC_DEC": {
+     "A/A/A/A/A/A": 30
+    },
+    "P_WRONG_CRED": {
+     "R/R/R/A/A/A": 30
+    },
+    "P_TAMPER_K": {
+     "R/R/R/A/A/A": 30
+    },
+    "P_REVOKE": {
+     "R/A/A/A": 30
+    },
+    "P_CORRUPT": {
+     "R/A/A/A": 30
+    },
+    "P_CORRUPT_CTR": {
+     "R/A/A/A": 30
+    }
+   }
+  }
+ },
+ "judged": {
+  "authelia-mc-4.39.28": [
+   {
+    "rep": 0,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 1,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 2,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 3,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 4,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 5,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 6,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 7,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 8,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 9,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 10,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 11,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 12,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 13,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 14,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 15,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 16,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 17,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 18,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 19,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 20,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 21,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 22,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 23,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 24,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 25,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 26,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 27,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 28,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   },
+   {
+    "rep": 29,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "undetermined",
+     "v2 규칙(대조 없음)": "undetermined",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/R/R/R",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/R"
+    }
+   }
+  ],
+  "kanidm-1.12.0": [
+   {
+    "rep": 0,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 1,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 2,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 3,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 4,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 5,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 6,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 7,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 8,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 9,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 10,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 11,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 12,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 13,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 14,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 15,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 16,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 17,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 18,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 19,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 20,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 21,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 22,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 23,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 24,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 25,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 26,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 27,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 28,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   },
+   {
+    "rep": 29,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "B/A/A/A",
+     "P_SC_DEC": "A/A/B/A/A/A",
+     "P_WRONG_CRED": "B/B/B/A/A/A",
+     "P_TAMPER_K": "B/B/B/A/A/A",
+     "P_REVOKE": "B/A/A/A",
+     "P_CORRUPT": "B/A/A/A",
+     "P_CORRUPT_CTR": "B/A/A/A"
+    }
+   }
+  ],
+  "vaultwarden-mc-1.35.5": [
+   {
+    "rep": 0,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 1,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 2,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 3,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 4,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 5,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 6,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 7,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 8,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 9,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 10,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 11,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 12,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 13,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 14,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 15,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 16,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 17,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 18,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 19,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 20,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 21,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 22,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 23,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 24,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 25,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 26,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 27,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 28,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   },
+   {
+    "rep": 29,
+    "n_probes": 8,
+    "block_cause": "state_corruption",
+    "verdict": "state_corruption",
+    "defect_presence": "state_corruption",
+    "baselines": {
+     "v2 규칙": "state_corruption",
+     "v2 규칙(대조 없음)": "state_corruption",
+     "복구만": "state_corruption",
+     "단순 재시도": "state_corruption",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "A/A/A/A",
+     "P_BEBS": "R/A/A/A",
+     "P_SC_DEC": "A/A/R/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/R/R/R/A"
+    }
+   }
+  ],
+  "zitadel-4.20.1": [
+   {
+    "rep": 0,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 1,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 2,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 3,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 4,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 5,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 6,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 7,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 8,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 9,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 10,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 11,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 12,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 13,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 14,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 15,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 16,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 17,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 18,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 19,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 20,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 21,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 22,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 23,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 24,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 25,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 26,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 27,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 28,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   },
+   {
+    "rep": 29,
+    "n_probes": 8,
+    "block_cause": "no_block",
+    "verdict": "no_block",
+    "defect_presence": "undetermined",
+    "baselines": {
+     "v2 규칙": "normal_policy",
+     "v2 규칙(대조 없음)": "normal_policy",
+     "복구만": "normal_policy",
+     "단순 재시도": "normal_policy",
+     "단일 응답": "normal_policy"
+    },
+    "symbols": {
+     "P_UV0": "R/A/A/A",
+     "P_BEBS": "A/A/A/A",
+     "P_SC_DEC": "A/A/A/A/A/A",
+     "P_WRONG_CRED": "R/R/R/A/A/A",
+     "P_TAMPER_K": "R/R/R/A/A/A",
+     "P_REVOKE": "R/A/A/A",
+     "P_CORRUPT": "R/A/A/A",
+     "P_CORRUPT_CTR": "R/A/A/A"
+    }
+   }
+  ]
+ }
+}

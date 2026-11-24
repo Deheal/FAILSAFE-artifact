@@ -1,0 +1,4433 @@
+{
+ "params": {
+  "eps": 0.1,
+  "tau": 0.99,
+  "m": 2,
+  "per_probe_a1": true
+ },
+ "per_q": {
+  "0.01": {
+   "authelia-4.39.28": {
+    "truth": "normal_policy",
+    "n": 30,
+    "diagnostics": {
+     "probes": 240,
+     "faults": 16,
+     "probes_with_fault": 16,
+     "control_not_all_accept": 7
+    },
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "undetermined": 4,
+      "normal_policy": 25,
+      "no_block": 1
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 4
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 30
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 30,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 30,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "FAILSAFE_labels": {
+     "undetermined(insufficient)": 3,
+     "normal_policy(unmodeled_policy)": 25,
+     "undetermined(defect_probe_missing)": 1,
+     "no_block": 1
+    },
+    "vs_paired:FAILSAFE": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "undetermined": 4,
+      "normal_policy": 25,
+      "no_block": 1
+     }
+    },
+    "vs_paired:v2 규칙": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "undetermined": 30
+     }
+    }
+   },
+   "authelia-mc-4.39.28": {
+    "truth": "state_corruption",
+    "n": 30,
+    "diagnostics": {
+     "probes": 240,
+     "faults": 15,
+     "probes_with_fault": 14,
+     "extra_step:P_CORRUPT_CTR": 30,
+     "control_not_all_accept": 8
+    },
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "undetermined": 3,
+      "state_corruption": 27
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 27,
+     "undetermined": 3
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 0,
+     "undetermined": 30
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 30,
+     "undetermined": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 30,
+     "undetermined": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 30,
+     "hit": 0,
+     "undetermined": 0
+    },
+    "FAILSAFE_labels": {
+     "undetermined(defect_probe_missing)": 3,
+     "state_corruption": 27
+    },
+    "vs_paired:FAILSAFE": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "undetermined": 3,
+      "state_corruption": 27
+     }
+    },
+    "vs_paired:v2 규칙": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "undetermined": 30
+     }
+    }
+   },
+   "gitea-1.24.0": {
+    "truth": "no_block",
+    "n": 30,
+    "diagnostics": {
+     "probes": 240,
+     "faults": 12,
+     "probes_with_fault": 12,
+     "control_not_all_accept": 6
+    },
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 23,
+      "normal_policy": 2,
+      "undetermined": 5
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 5
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 25,
+      "undetermined": 5
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 5
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "FAILSAFE_labels": {
+     "no_block": 23,
+     "normal_policy": 2,
+     "undetermined(defect_probe_missing)": 3,
+     "undetermined(insufficient)": 2
+    },
+    "vs_paired:FAILSAFE": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "no_block": 23,
+      "normal_policy": 2,
+      "undetermined": 5
+     }
+    },
+    "vs_paired:v2 규칙": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "normal_policy": 25,
+      "undetermined": 5
+     }
+    }
+   },
+   "keycloak-26.0.7-bf_on": {
+    "truth": "normal_policy",
+    "n": 30,
+    "diagnostics": {
+     "probes": 240,
+     "faults": 19,
+     "probes_with_fault": 19,
+     "control_not_all_accept": 11
+    },
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 27,
+      "undetermined": 3
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 3
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 20,
+      "undetermined": 10
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 10
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 29,
+      "state_corruption": 1
+     },
+     "fp": 1,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 30,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "FAILSAFE_labels": {
+     "normal_policy": 27,
+     "undetermined(defect_probe_missing)": 2,
+     "undetermined(insufficient)": 1
+    },
+    "vs_paired:FAILSAFE": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "normal_policy": 27,
+      "undetermined": 3
+     }
+    },
+    "vs_paired:v2 규칙": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "normal_policy": 20,
+      "undetermined": 10
+     }
+    }
+   },
+   "vaultwarden-1.35.4": {
+    "truth": "state_corruption",
+    "n": 30,
+    "diagnostics": {
+     "probes": 240,
+     "faults": 9,
+     "probes_with_fault": 9,
+     "extra_step:P_CORRUPT": 30,
+     "control_not_all_accept": 3
+    },
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 30,
+     "undetermined": 0
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 30,
+     "undetermined": 0
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 30,
+     "undetermined": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 30,
+     "undetermined": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 30,
+     "hit": 0,
+     "undetermined": 0
+    },
+    "FAILSAFE_labels": {
+     "state_corruption": 30
+    },
+    "vs_paired:FAILSAFE": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "state_corruption": 30
+     }
+    },
+    "vs_paired:v2 규칙": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "state_corruption": 30
+     }
+    }
+   },
+   "vaultwarden-1.35.5": {
+    "truth": "no_block",
+    "n": 30,
+    "diagnostics": {
+     "probes": 240,
+     "faults": 13,
+     "probes_with_fault": 12,
+     "control_not_all_accept": 7
+    },
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 26,
+      "undetermined": 4
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 4
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 23,
+      "undetermined": 7
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 7
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "FAILSAFE_labels": {
+     "no_block": 26,
+     "undetermined(defect_probe_missing)": 1,
+     "undetermined(insufficient)": 3
+    },
+    "vs_paired:FAILSAFE": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "no_block": 26,
+      "undetermined": 4
+     }
+    },
+    "vs_paired:v2 규칙": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "normal_policy": 23,
+      "undetermined": 7
+     }
+    }
+   }
+  },
+  "0.05": {
+   "authelia-4.39.28": {
+    "truth": "normal_policy",
+    "n": 30,
+    "diagnostics": {
+     "probes": 240,
+     "faults": 81,
+     "probes_with_fault": 70,
+     "control_not_all_accept": 39,
+     "extra_step:P_CORRUPT": 1
+    },
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 13,
+      "undetermined": 16,
+      "no_block": 1
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 16
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 30
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 30,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 30,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "FAILSAFE_labels": {
+     "normal_policy(unmodeled_policy)": 11,
+     "undetermined(insufficient)": 8,
+     "no_block": 1,
+     "normal_policy": 2,
+     "undetermined(defect_probe_missing)": 8
+    },
+    "vs_paired:FAILSAFE": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "normal_policy": 13,
+      "undetermined": 16,
+      "no_block": 1
+     }
+    },
+    "vs_paired:v2 규칙": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "undetermined": 30
+     }
+    }
+   },
+   "authelia-mc-4.39.28": {
+    "truth": "state_corruption",
+    "n": 30,
+    "diagnostics": {
+     "probes": 240,
+     "faults": 68,
+     "probes_with_fault": 59,
+     "control_not_all_accept": 26,
+     "extra_step:P_CORRUPT_CTR": 30
+    },
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 26,
+      "undetermined": 4
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 26,
+     "undetermined": 4
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 0,
+     "undetermined": 30
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 30,
+     "undetermined": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 30,
+     "undetermined": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 30,
+     "hit": 0,
+     "undetermined": 0
+    },
+    "FAILSAFE_labels": {
+     "state_corruption": 26,
+     "undetermined(defect_probe_missing)": 1,
+     "undetermined(insufficient)": 3
+    },
+    "vs_paired:FAILSAFE": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "state_corruption": 26,
+      "undetermined": 4
+     }
+    },
+    "vs_paired:v2 규칙": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "undetermined": 30
+     }
+    }
+   },
+   "gitea-1.24.0": {
+    "truth": "no_block",
+    "n": 30,
+    "diagnostics": {
+     "probes": 240,
+     "faults": 86,
+     "probes_with_fault": 74,
+     "control_not_all_accept": 41
+    },
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 16,
+      "undetermined": 14
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 14
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 24,
+      "normal_policy": 6
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 24
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "FAILSAFE_labels": {
+     "no_block": 16,
+     "undetermined(defect_probe_missing)": 10,
+     "undetermined(insufficient)": 4
+    },
+    "vs_paired:FAILSAFE": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "no_block": 16,
+      "undetermined": 14
+     }
+    },
+    "vs_paired:v2 규칙": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "undetermined": 24,
+      "normal_policy": 6
+     }
+    }
+   },
+   "keycloak-26.0.7-bf_on": {
+    "truth": "normal_policy",
+    "n": 30,
+    "diagnostics": {
+     "probes": 240,
+     "faults": 72,
+     "probes_with_fault": 57,
+     "control_not_all_accept": 29,
+     "extra_step:P_CORRUPT_CTR": 1
+    },
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 21,
+      "undetermined": 7,
+      "no_block": 2
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 7
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 10,
+      "undetermined": 20
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 20
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 26,
+      "state_corruption": 4
+     },
+     "fp": 4,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 30,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "FAILSAFE_labels": {
+     "normal_policy": 21,
+     "undetermined(insufficient)": 2,
+     "no_block": 2,
+     "undetermined(defect_probe_missing)": 5
+    },
+    "vs_paired:FAILSAFE": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "normal_policy": 21,
+      "undetermined": 7,
+      "no_block": 2
+     }
+    },
+    "vs_paired:v2 규칙": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "normal_policy": 10,
+      "undetermined": 20
+     }
+    }
+   },
+   "vaultwarden-1.35.4": {
+    "truth": "state_corruption",
+    "n": 30,
+    "diagnostics": {
+     "probes": 240,
+     "faults": 67,
+     "probes_with_fault": 57,
+     "control_not_all_accept": 31,
+     "extra_step:P_CORRUPT": 30
+    },
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 25,
+      "undetermined": 5
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 25,
+     "undetermined": 5
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 25,
+      "undetermined": 5
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 25,
+     "undetermined": 5
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 30,
+     "undetermined": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": 30,
+     "undetermined": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 30,
+     "hit": 0,
+     "undetermined": 0
+    },
+    "FAILSAFE_labels": {
+     "state_corruption": 25,
+     "undetermined(defect_probe_missing)": 5
+    },
+    "vs_paired:FAILSAFE": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "state_corruption": 25,
+      "undetermined": 5
+     }
+    },
+    "vs_paired:v2 규칙": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "state_corruption": 25,
+      "undetermined": 5
+     }
+    }
+   },
+   "vaultwarden-1.35.5": {
+    "truth": "no_block",
+    "n": 30,
+    "diagnostics": {
+     "probes": 240,
+     "faults": 83,
+     "probes_with_fault": 68,
+     "control_not_all_accept": 35,
+     "extra_step:P_CORRUPT": 1
+    },
+    "FAILSAFE": {
+     "n": 30,
+     "dist": {
+      "no_block": 16,
+      "normal_policy": 2,
+      "undetermined": 12
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 12
+    },
+    "v2 규칙": {
+     "n": 30,
+     "dist": {
+      "undetermined": 22,
+      "normal_policy": 8
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 22
+    },
+    "복구만": {
+     "n": 30,
+     "dist": {
+      "state_corruption": 2,
+      "normal_policy": 28
+     },
+     "fp": 2,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단순 재시도": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "단일 응답": {
+     "n": 30,
+     "dist": {
+      "normal_policy": 30
+     },
+     "fp": 0,
+     "miss": 0,
+     "hit": null,
+     "undetermined": 0
+    },
+    "FAILSAFE_labels": {
+     "no_block": 16,
+     "normal_policy": 2,
+     "undetermined(insufficient)": 4,
+     "undetermined(defect_probe_missing)": 8
+    },
+    "vs_paired:FAILSAFE": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "no_block": 16,
+      "normal_policy": 2,
+      "undetermined": 12
+     }
+    },
+    "vs_paired:v2 규칙": {
+     "same": 30,
+     "n": 30,
+     "changes": {},
+     "predicted_dist": {
+      "undetermined": 22,
+      "normal_policy": 8
+     }
+    }
+   }
+  }
+ },
+ "totals": {
+  "0.01": {
+   "FAILSAFE": {
+    "fp_conditions": 0,
+    "fp": 0,
+    "miss_conditions": 0,
+    "miss": 0,
+    "hit": 57,
+    "pos_trials": 60,
+    "neg_trials": 120,
+    "undetermined": 19,
+    "confident_errors": 0
+   },
+   "v2 규칙": {
+    "fp_conditions": 0,
+    "fp": 0,
+    "miss_conditions": 0,
+    "miss": 0,
+    "hit": 30,
+    "pos_trials": 60,
+    "neg_trials": 120,
+    "undetermined": 82,
+    "confident_errors": 0
+   },
+   "복구만": {
+    "fp_conditions": 2,
+    "fp": 31,
+    "miss_conditions": 0,
+    "miss": 0,
+    "hit": 60,
+    "pos_trials": 60,
+    "neg_trials": 120,
+    "undetermined": 0,
+    "confident_errors": 31
+   },
+   "단순 재시도": {
+    "fp_conditions": 2,
+    "fp": 60,
+    "miss_conditions": 0,
+    "miss": 0,
+    "hit": 60,
+    "pos_trials": 60,
+    "neg_trials": 120,
+    "undetermined": 0,
+    "confident_errors": 60
+   },
+   "단일 응답": {
+    "fp_conditions": 0,
+    "fp": 0,
+    "miss_conditions": 2,
+    "miss": 60,
+    "hit": 0,
+    "pos_trials": 60,
+    "neg_trials": 120,
+    "undetermined": 0,
+    "confident_errors": 60
+   }
+  },
+  "0.05": {
+   "FAILSAFE": {
+    "fp_conditions": 0,
+    "fp": 0,
+    "miss_conditions": 0,
+    "miss": 0,
+    "hit": 51,
+    "pos_trials": 60,
+    "neg_trials": 120,
+    "undetermined": 58,
+    "confident_errors": 0
+   },
+   "v2 규칙": {
+    "fp_conditions": 0,
+    "fp": 0,
+    "miss_conditions": 0,
+    "miss": 0,
+    "hit": 25,
+    "pos_trials": 60,
+    "neg_trials": 120,
+    "undetermined": 131,
+    "confident_errors": 0
+   },
+   "복구만": {
+    "fp_conditions": 3,
+    "fp": 36,
+    "miss_conditions": 0,
+    "miss": 0,
+    "hit": 60,
+    "pos_trials": 60,
+    "neg_trials": 120,
+    "undetermined": 0,
+    "confident_errors": 36
+   },
+   "단순 재시도": {
+    "fp_conditions": 2,
+    "fp": 60,
+    "miss_conditions": 0,
+    "miss": 0,
+    "hit": 60,
+    "pos_trials": 60,
+    "neg_trials": 120,
+    "undetermined": 0,
+    "confident_errors": 60
+   },
+   "단일 응답": {
+    "fp_conditions": 0,
+    "fp": 0,
+    "miss_conditions": 2,
+    "miss": 60,
+    "hit": 0,
+    "pos_trials": 60,
+    "neg_trials": 120,
+    "undetermined": 0,
+    "confident_errors": 60
+   }
+  }
+ },
+ "decision_rule": {
+  "per_q": {
+   "0.01": false,
+   "0.05": false
+  },
+  "met": false
+ },
+ "judged": {
+  "0.01|authelia-4.39.28": {
+   "0": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "1": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "2": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "3": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "4": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "5": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "6": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "7": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "8": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "9": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "10": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "11": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "12": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "13": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "14": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "15": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "16": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "17": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "18": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "19": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "20": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "21": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "22": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "23": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "24": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "25": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "26": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "27": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "28": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "29": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   }
+  },
+  "0.01|authelia-mc-4.39.28": {
+   "0": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "1": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "2": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "3": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "4": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "5": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "6": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "7": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "8": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "9": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "10": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "11": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "12": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "13": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "14": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "15": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "16": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "17": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "18": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "19": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "20": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "21": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "22": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "23": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "24": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "25": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "26": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "27": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "28": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "29": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   }
+  },
+  "0.01|gitea-1.24.0": {
+   "0": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "1": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "2": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "3": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "4": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "5": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "6": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "7": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "8": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "9": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "10": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "11": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "12": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "13": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "14": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "15": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "16": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "17": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "18": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "19": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "20": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "21": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "22": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "23": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "24": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "25": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "26": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "27": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "28": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "29": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   }
+  },
+  "0.01|keycloak-26.0.7-bf_on": {
+   "0": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "1": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "2": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "3": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "4": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "5": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "6": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "7": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "8": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "9": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "10": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "11": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "12": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "13": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "14": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "15": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "16": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "17": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "18": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "19": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "20": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "21": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "22": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "23": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "24": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "25": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "26": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "27": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "28": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "29": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   }
+  },
+  "0.01|vaultwarden-1.35.4": {
+   "0": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "1": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "2": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "3": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "4": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "5": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "6": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "7": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "8": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "9": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "10": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "11": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "12": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "13": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "14": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "15": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "16": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "17": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "18": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "19": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "20": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "21": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "22": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "23": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "24": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "25": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "26": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "27": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "28": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "29": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   }
+  },
+  "0.01|vaultwarden-1.35.5": {
+   "0": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "1": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "2": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "3": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "4": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "5": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "6": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "7": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "8": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "9": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "10": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "11": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "12": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "13": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "14": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "15": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "16": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "17": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "18": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "19": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "20": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "21": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "22": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "23": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "24": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "25": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "26": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "27": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "28": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "29": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   }
+  },
+  "0.05|authelia-4.39.28": {
+   "0": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "1": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "2": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "3": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "4": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "5": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "6": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "7": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "8": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "9": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "10": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "11": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "12": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "13": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "14": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "15": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "16": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "17": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "18": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "19": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "20": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "21": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "22": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "23": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "24": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "25": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "26": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "27": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "28": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "29": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy(unmodeled_policy)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   }
+  },
+  "0.05|authelia-mc-4.39.28": {
+   "0": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "1": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "2": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "3": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "4": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "5": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "6": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "7": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "8": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "9": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "10": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "11": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "12": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "13": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "14": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "15": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "16": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "17": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "18": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "19": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "20": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "21": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "22": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "23": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "24": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "25": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "26": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "27": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "28": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "29": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   }
+  },
+  "0.05|gitea-1.24.0": {
+   "0": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "1": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "2": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "3": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "4": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "5": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "6": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "7": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "8": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "9": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "10": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "11": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "12": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "13": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "14": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "15": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "16": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "17": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "18": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "19": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "20": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "21": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "22": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "23": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "24": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "25": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "26": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "27": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "28": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "29": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   }
+  },
+  "0.05|keycloak-26.0.7-bf_on": {
+   "0": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "1": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "2": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "3": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "4": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "5": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "6": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "7": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "8": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "9": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "10": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "11": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "12": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "13": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "14": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "15": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "16": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "17": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "18": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "19": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "20": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "21": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "22": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "23": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "24": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "25": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "26": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "27": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "28": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "29": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   }
+  },
+  "0.05|vaultwarden-1.35.4": {
+   "0": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "1": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "2": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "3": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "4": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "5": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "6": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "7": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "8": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "9": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "10": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "11": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "12": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "13": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "14": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "15": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "16": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "17": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "18": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "19": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "20": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "21": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "22": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "23": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "24": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "25": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "26": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "27": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "28": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   },
+   "29": {
+    "FAILSAFE": "state_corruption",
+    "FAILSAFE_label": "state_corruption",
+    "v2 규칙": "state_corruption",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "state_corruption",
+    "단일 응답": "normal_policy"
+   }
+  },
+  "0.05|vaultwarden-1.35.5": {
+   "0": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "undetermined",
+    "복구만": "state_corruption",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "1": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "2": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "3": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "4": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "5": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "6": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "7": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "8": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "9": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "10": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "11": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "12": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "13": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "14": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "15": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "16": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "17": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "18": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "19": {
+    "FAILSAFE": "normal_policy",
+    "FAILSAFE_label": "normal_policy",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "20": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "state_corruption",
+    "복구만": "state_corruption",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "21": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(defect_probe_missing)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "22": {
+    "FAILSAFE": "undetermined",
+    "FAILSAFE_label": "undetermined(insufficient)",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "23": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "24": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "25": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "26": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "27": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "normal_policy",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "28": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   },
+   "29": {
+    "FAILSAFE": "no_block",
+    "FAILSAFE_label": "no_block",
+    "v2 규칙": "undetermined",
+    "v2 규칙(대조 없음)": "normal_policy",
+    "복구만": "normal_policy",
+    "단순 재시도": "normal_policy",
+    "단일 응답": "normal_policy"
+   }
+  }
+ }
+}

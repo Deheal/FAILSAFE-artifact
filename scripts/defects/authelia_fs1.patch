@@ -1,0 +1,28 @@
+--- authelia-src/internal/handlers/handler_sign_webauthn.go	2026-11-12 14:34:44.974688539 +0900
++++ authelia-fs1/internal/handlers/handler_sign_webauthn.go	2026-11-12 14:34:46.084593386 +0900
+@@ -207,6 +207,25 @@
+ 		return
+ 	}
+ 
++	// FAILSAFE defect injection FS-1 (docs/defect_injection.md): CVE-2026-31835 pattern.
++	// Mirrors vaultwarden 1.35.4 check_and_update_backup_eligible: persist BE/BS taken from the
++	// UNVERIFIED request before the signature is validated.
++	if flags := response.Response.AuthenticatorData.Flags; flags.HasBackupEligible() {
++		for i := range user.Credentials {
++			if bytes.Equal(user.Credentials[i].KID.Bytes(), response.RawID) {
++				if user.Credentials[i].BackupState != flags.HasBackupState() || !user.Credentials[i].BackupEligible {
++					user.Credentials[i].BackupEligible = true
++					user.Credentials[i].BackupState = flags.HasBackupState()
++					if err = ctx.Providers.StorageProvider.UpdateWebAuthnCredentialSignIn(ctx, user.Credentials[i]); err != nil {
++						ctx.Logger.WithError(err).Error("FS-1: failed to persist backup flags")
++					}
++				}
++
++				break
++			}
++		}
++	}
++
+ 	if c, err = w.ValidateLogin(user, *userSession.WebAuthn.SessionData, response); err != nil {
+ 		doMarkAuthenticationAttempt(ctx, false, regulation.NewBan(regulation.BanTypeNone, userSession.Username, nil), regulation.AuthTypeWebAuthn, iwebauthn.FormatError(err))
+ 
